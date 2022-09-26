@@ -1,0 +1,1 @@
+This repository is the project that I wanted to created but I had to stop due to many reasons. It will helps to give an orientation to students before the enter in university by showing them opportunity and fields of study and so on. The frontend is TypeScript and ReactJS The Backend is Python and Django
