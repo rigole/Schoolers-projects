@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="models of schools and category + migrations">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="add frontend + setting tailwindcss">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +56,7 @@
       <workItem from="1663593473605" duration="270000" />
       <workItem from="1664116101446" duration="1110000" />
       <workItem from="1669487227560" duration="864000" />
-      <workItem from="1669529552436" duration="1296000" />
+      <workItem from="1669529552436" duration="1873000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -79,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664116487935</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add frontend + setting tailwindcss">
+      <created>1669531215827</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669531215827</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +107,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="updating the readme" />
     <MESSAGE value="models of schools and category + migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="models of schools and category + migrations" />
+    <MESSAGE value="add frontend + setting tailwindcss" />
+    <option name="LAST_COMMIT_MESSAGE" value="add frontend + setting tailwindcss" />
   </component>
 </project>
