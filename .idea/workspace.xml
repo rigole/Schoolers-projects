@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="navbar 1">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="navbar 2(hover, background and button) + Banner picture">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +65,7 @@
       <workItem from="1669487227560" duration="864000" />
       <workItem from="1669529552436" duration="1873000" />
       <workItem from="1669532381392" duration="6603000" />
-      <workItem from="1669709873213" duration="5867000" />
+      <workItem from="1669709873213" duration="10563000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -102,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669538166119</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="navbar 2(hover, background and button) + Banner picture">
+      <created>1669718149095</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669718149095</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +132,7 @@
     <MESSAGE value="models of schools and category + migrations" />
     <MESSAGE value="add frontend + setting tailwindcss" />
     <MESSAGE value="navbar 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="navbar 1" />
+    <MESSAGE value="navbar 2(hover, background and button) + Banner picture" />
+    <option name="LAST_COMMIT_MESSAGE" value="navbar 2(hover, background and button) + Banner picture" />
   </component>
 </project>
