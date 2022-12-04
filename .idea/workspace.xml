@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="Banner text + button">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="navbar responsive displaying the button 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +68,8 @@
       <workItem from="1669709873213" duration="10673000" />
       <workItem from="1669808448937" duration="597000" />
       <workItem from="1669821707259" duration="602000" />
-      <workItem from="1669889866309" duration="6182000" />
+      <workItem from="1669889866309" duration="8531000" />
+      <workItem from="1670096923318" duration="20400000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -119,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669726202339</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="navbar responsive displaying the button 1">
+      <created>1669899379759</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669899379759</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +152,7 @@
     <MESSAGE value="navbar 1" />
     <MESSAGE value="navbar 2(hover, background and button) + Banner picture" />
     <MESSAGE value="Banner text + button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Banner text + button" />
+    <MESSAGE value="navbar responsive displaying the button 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="navbar responsive displaying the button 1" />
   </component>
 </project>
