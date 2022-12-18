@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="Displaying sidebar menu and changing icon during to click">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="displaying sidebar with animation on mobile devices">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +73,15 @@
       <workItem from="1670232219712" duration="12591000" />
       <workItem from="1670270996037" duration="3907000" />
       <workItem from="1670313170997" duration="10279000" />
-      <workItem from="1670400515550" duration="13428000" />
+      <workItem from="1670400515550" duration="13851000" />
+      <workItem from="1670420625602" duration="592000" />
+      <workItem from="1670425057424" duration="595000" />
+      <workItem from="1670495741423" duration="6188000" />
+      <workItem from="1670957244044" duration="73000" />
+      <workItem from="1670959423054" duration="706000" />
+      <workItem from="1671097492702" duration="7436000" />
+      <workItem from="1671127940955" duration="3584000" />
+      <workItem from="1671349513662" duration="2311000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -145,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670250239974</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="displaying sidebar with animation on mobile devices">
+      <created>1670420082497</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670420082512</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +188,7 @@
     <MESSAGE value="navbar responsive displaying the button 1" />
     <MESSAGE value="setting the icon onclick with useState, sidemenu" />
     <MESSAGE value="Displaying sidebar menu and changing icon during to click" />
-    <option name="LAST_COMMIT_MESSAGE" value="Displaying sidebar menu and changing icon during to click" />
+    <MESSAGE value="displaying sidebar with animation on mobile devices" />
+    <option name="LAST_COMMIT_MESSAGE" value="displaying sidebar with animation on mobile devices" />
   </component>
 </project>
