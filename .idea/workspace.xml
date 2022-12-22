@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="displaying sidebar with animation on mobile devices">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="setting the abroad component and responsive">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +81,10 @@
       <workItem from="1670959423054" duration="706000" />
       <workItem from="1671097492702" duration="7436000" />
       <workItem from="1671127940955" duration="3584000" />
-      <workItem from="1671349513662" duration="2311000" />
+      <workItem from="1671349513662" duration="4776000" />
+      <workItem from="1671646993842" duration="2470000" />
+      <workItem from="1671653944846" duration="2119000" />
+      <workItem from="1671703774167" duration="2004000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -160,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670420082512</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="setting the abroad component and responsive">
+      <created>1671352141279</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1671352141279</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +199,7 @@
     <MESSAGE value="setting the icon onclick with useState, sidemenu" />
     <MESSAGE value="Displaying sidebar menu and changing icon during to click" />
     <MESSAGE value="displaying sidebar with animation on mobile devices" />
-    <option name="LAST_COMMIT_MESSAGE" value="displaying sidebar with animation on mobile devices" />
+    <MESSAGE value="setting the abroad component and responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting the abroad component and responsive" />
   </component>
 </project>
