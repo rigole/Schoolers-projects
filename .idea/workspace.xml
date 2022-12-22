@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="setting the abroad component and responsive">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="fixing the navbar to top">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +84,8 @@
       <workItem from="1671349513662" duration="4776000" />
       <workItem from="1671646993842" duration="2470000" />
       <workItem from="1671653944846" duration="2119000" />
-      <workItem from="1671703774167" duration="2004000" />
+      <workItem from="1671703774167" duration="6855000" />
+      <workItem from="1671714587467" duration="1448000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -170,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671352141279</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fixing the navbar to top">
+      <created>1671706426971</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1671706426971</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +208,7 @@
     <MESSAGE value="Displaying sidebar menu and changing icon during to click" />
     <MESSAGE value="displaying sidebar with animation on mobile devices" />
     <MESSAGE value="setting the abroad component and responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting the abroad component and responsive" />
+    <MESSAGE value="fixing the navbar to top" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing the navbar to top" />
   </component>
 </project>
