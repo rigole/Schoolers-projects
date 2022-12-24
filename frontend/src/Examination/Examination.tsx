@@ -4,18 +4,22 @@ import OrientationImage from "../images/orientation.jpg";
 const Examination = () => {
 
     return (
-        <section className="flex flex-row  items-end bg-gray-200 ">
-            <div>
+        <section className="bg-gray-200 w-full ">
+        <div className="flex flex-row items-center justify-center px-45">
+            <div className="items-start">
                 <img  src={OrientationImage} alt="" className="w-[350px] h-[350px] rounded-full items-center text-center py-4"/>
             </div>
-            <div className="">
-                <div className="">
-                    <p className="text-center">Don't know where to start? Think about taking an orientation test <br/>to know in which field of study you could succeed</p>
+           
+                <div className="flex flex-col items-center justify-center">
+                    <div className="">
+                        <p className="text-center">Don't know where to start? Think about taking an orientation test <br/>to know in which field of study you could succeed</p>
+                    </div>
+                    <a className="space-x-5  rounded-md bg-transparent text-white  hover:text-white transition-all" href="">
+                        <button className="rounded-full mt-4 py-2 px-14 border-1 bg-amber-500 hover:bg-amber-300">Take the test</button>
+                    </a>
                 </div>
-                <a className="space-x-5  rounded-md bg-transparent text-white  hover:text-white transition-all" href="">
-                    <button className="rounded-full mt-4 py-2 px-14 border-1 bg-amber-500 hover:bg-amber-300">Take the test</button>
-                </a>
             </div>
+            
          
         </section>
     )
