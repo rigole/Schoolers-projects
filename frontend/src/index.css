@@ -26,3 +26,15 @@ body {
   color: #ffff;
   background-color: #1a1a37;
 }
+
+@media  screen and (max-width: 575px) {
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+  }
+  .part {
+    padding: 1rem;
+  }
+}

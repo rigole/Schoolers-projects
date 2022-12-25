@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className="footer ">
-           <div className="flex flex-col">
+        <footer className="footer">
+           <div className="part flex flex-col">
                 <h3>SCHOOLERS</h3>
                 <p>About us</p>
                 <p>About us</p>
@@ -11,7 +11,7 @@ const Footer = () => {
                 <p>About us</p>
            </div>
 
-           <div>
+           <div className="part">
                 <h3>RESSOURCES</h3>
                 <p>About us</p>
                 <p>About us</p>
@@ -19,7 +19,7 @@ const Footer = () => {
                 <p>About us</p>
            </div>
 
-            <div>
+            <div className="part">
                 <h3>SCHOOLS TYPES</h3>
                 <p>About us</p>
                 <p>About us</p>
@@ -27,7 +27,7 @@ const Footer = () => {
                 <p>About us</p>
            </div>
 
-           <div>
+           <div className="part">
                 <h3>EXAMS</h3>
                 <p>About us</p>
                 <p>About us</p>
@@ -35,7 +35,7 @@ const Footer = () => {
                 <p>About us</p>
            </div>
 
-           <div>
+           <div className="part">
                 <h3>SCHOLARSHIPS</h3>
                 <p>About us</p>
                 <p>About us</p>
@@ -43,7 +43,7 @@ const Footer = () => {
                 <p>About us</p>
            </div>
 
-           <div >
+           <div className="part">
                 <h3>GET IN TOUCH</h3>
                 <div className="flex flex-row justify-between">
                 <p>
