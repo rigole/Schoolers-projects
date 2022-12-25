@@ -9,7 +9,7 @@ const Examination = () => {
                 <div className="items-start">
                     <img  src={OrientationImage} alt="" className="w-[350px] h-[350px] rounded-full items-center text-center py-4"/>
                 </div>
-                <div className="flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-evenly">
                     <div className="">
                         <p className="text-center">You can also get all the informations about all examination entrance<br/>  of some schools either privates or publics schools</p>
                     </div>
