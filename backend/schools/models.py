@@ -25,5 +25,19 @@ class School(models.Model):
         return self.name
     
     
+class StudyField(models.Model):
+    name = models.CharField(max_length=255, null=False, blank=True)
+    field_id = models.AutoField(primary_key=True, editable=False)
+    
+    def __str__(self):
+        return self.name
+    
+    
+class Programs(models.Model):
+    name = models.CharField(max_length=255, null=False, blank=True)
+    duration = models.IntegerField(null=False, blank=True)
+    
+    
+    
     
 
