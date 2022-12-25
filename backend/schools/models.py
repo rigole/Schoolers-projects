@@ -33,9 +33,28 @@ class StudyField(models.Model):
         return self.name
     
     
-class Programs(models.Model):
+class Program(models.Model):
     name = models.CharField(max_length=255, null=False, blank=True)
     duration = models.IntegerField(null=False, blank=True)
+    program_id = models.AutoField(primary_key=True, editable=False)
+    
+    
+    def __str__(self):
+        return self.name
+    
+
+class EntranceExamination(models.Model):
+    entranceexam_id = models.AutoField(primary_key=True, editable=False)
+    name = models.CharField(max_length=255, null=False, blank=True)
+    description = models.TextField(null=True, blank=True)
+    writingDate = models.DateTimeField(auto_now_add=False,null=False, blank=False)
+    deadlineDate = models.DateTimeField(auto_now_add=False, null=False, blank=False)
+    
+    
+    def __str__(self):
+        return self.name
+    
+
     
     
     
