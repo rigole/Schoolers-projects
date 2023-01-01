@@ -1,20 +1,14 @@
 import React from 'react';
 import './App.css';
 import Header from "./Header/Header";
-import Banner from "./Banner/Banner";
-import Abroad from "./Abroad/Abroad";
-import Orientation from "./Orientation/Orientation";
-import Examination from "./Examination/Examination";
 import Footer from "./Footer/Footer";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
     <div className="App">
         <Header/>
-        <Banner/>
-        <Examination/>
-        <Abroad/>
-        <Orientation/>
+        <HomePage/>
         <Footer/>
 
     </div>
