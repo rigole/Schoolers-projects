@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="final position of the orientation section">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="university component + search bar and responsive">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +89,10 @@
       <workItem from="1671737844278" duration="2028000" />
       <workItem from="1671861698816" duration="3124000" />
       <workItem from="1672640032579" duration="11117000" />
-      <workItem from="1672739551517" duration="6542000" />
+      <workItem from="1672739551517" duration="10149000" />
+      <workItem from="1672837484056" duration="633000" />
+      <workItem from="1672928100318" duration="3294000" />
+      <workItem from="1672983743833" duration="5188000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -196,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671739529798</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="university component + search bar and responsive">
+      <created>1672822888229</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1672822888229</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +239,7 @@
     <MESSAGE value="fixing the navbar to top" />
     <MESSAGE value="adding the Orientation section" />
     <MESSAGE value="final position of the orientation section" />
-    <option name="LAST_COMMIT_MESSAGE" value="final position of the orientation section" />
+    <MESSAGE value="university component + search bar and responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="university component + search bar and responsive" />
   </component>
 </project>
