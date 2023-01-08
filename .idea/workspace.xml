@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="university component + search bar and responsive">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="filters + criteria">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +92,8 @@
       <workItem from="1672739551517" duration="10149000" />
       <workItem from="1672837484056" duration="633000" />
       <workItem from="1672928100318" duration="3294000" />
-      <workItem from="1672983743833" duration="5188000" />
+      <workItem from="1672983743833" duration="15273000" />
+      <workItem from="1673164784256" duration="9406000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -206,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672822888229</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="filters + criteria">
+      <created>1672989459098</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1672989459098</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +248,7 @@
     <MESSAGE value="adding the Orientation section" />
     <MESSAGE value="final position of the orientation section" />
     <MESSAGE value="university component + search bar and responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="university component + search bar and responsive" />
+    <MESSAGE value="filters + criteria" />
+    <option name="LAST_COMMIT_MESSAGE" value="filters + criteria" />
   </component>
 </project>
