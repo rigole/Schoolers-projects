@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="setting the card of school result(disposing elements) part-2">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="adding the profile picture">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +94,9 @@
       <workItem from="1672928100318" duration="3294000" />
       <workItem from="1672983743833" duration="15273000" />
       <workItem from="1673164784256" duration="14712000" />
-      <workItem from="1673239968227" duration="12107000" />
+      <workItem from="1673239968227" duration="13763000" />
+      <workItem from="1673292485494" duration="289000" />
+      <workItem from="1673333290771" duration="5496000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -229,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673185652755</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="adding the profile picture">
+      <created>1673275200265</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1673275200265</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +275,7 @@
     <MESSAGE value="filters + criteria" />
     <MESSAGE value="setting the card of school result part-1" />
     <MESSAGE value="setting the card of school result(disposing elements) part-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting the card of school result(disposing elements) part-2" />
+    <MESSAGE value="adding the profile picture" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding the profile picture" />
   </component>
 </project>
