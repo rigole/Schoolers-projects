@@ -20,6 +20,7 @@ class School(models.Model):
     rating = models.DecimalField(max_digits=7, decimal_places=2, null=True, blank=True)
     school_id = models.AutoField(primary_key=True, editable=False)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
+    coverImage = models.ImageField(null=True, blank=True)
     
     def __str__(self):
         return self.name
