@@ -43,7 +43,7 @@ const Footer = () => {
                 <p>About us</p>
            </div>
 
-           <div className="part">
+               <div className="part">
                 <h3>GET IN TOUCH</h3>
                 <div className="flex flex-row justify-between">
                 <p>
@@ -63,10 +63,10 @@ const Footer = () => {
                 </p>
                 <p>
                 <a href="#">
-                         <i className="fab fa-instagram"></i>
+                    <i className="fab fa-instagram"></i>
                     </a>
                 </p>
-                </div>
+               </div>
                 
            </div>
         </footer>

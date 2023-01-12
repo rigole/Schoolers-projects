@@ -29,8 +29,8 @@ const Header = () => {
 
 
     return (
-        <div className="fixed w-full z-10">
-            <nav className=" w-fulsl px-5 absolute list-none  right-0 left-0 z-10 text-blue-400 ">
+        <div className="fixed w-full z-10 ">
+            <nav className=" w-fulsl px-5 absolute list-none  right-0 left-0 z-10 text-blue-400 bg-[#1a1a37]">
                 <div className=" mx-auto flex py-5 justify-between font-comf">
                     <div>
                         <a href="#" className="text-lg  py-2 px-4 rounded-md bg-transparent text-white   transition-all">Schoolers Logo</a>
@@ -39,7 +39,7 @@ const Header = () => {
                         <a href="#">
                             <li
                                 className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all">
-                                University
+                                Universities
                             </li>
                         </a>
                         <a href="">
