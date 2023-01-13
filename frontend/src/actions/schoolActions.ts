@@ -15,7 +15,7 @@ export const schoolList = () => async (dispatch: any) => {
 
     try {
         dispatch({ type: SCHOOL_LIST_REQUEST })
-        axios.get('/api/products/').then((response) => {
+        axios.get('http://127.0.0.1:8000/api/schools/').then((response) => {
 
             dispatch({
                 type: SCHOOL_lIST_SUCCESS,

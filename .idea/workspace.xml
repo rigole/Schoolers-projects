@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="Setting the actions, reducers for schools and details">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +102,7 @@
       <workItem from="1673380724981" duration="629000" />
       <workItem from="1673416014890" duration="6639000" />
       <workItem from="1673441845755" duration="3907000" />
+      <workItem from="1673586625933" duration="1856000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
