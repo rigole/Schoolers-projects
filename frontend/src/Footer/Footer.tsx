@@ -4,47 +4,34 @@ const Footer = () => {
     return (
         <footer className="footer">
            <div className="part flex flex-col">
-                <h3>SCHOOLERS</h3>
-                <p>About us</p>
-                <p>About us</p>
-                <p>About us</p>
-                <p>About us</p>
+                <h3 className="py-2">SCHOOLERS</h3>
+                <p>About</p>
+                <p>Terms</p>
+                <p>Privacy</p>
+                <p>Blog</p>
            </div>
 
            <div className="part">
-                <h3>RESSOURCES</h3>
-                <p>About us</p>
-                <p>About us</p>
-                <p>About us</p>
-                <p>About us</p>
+                <h3 className="py-2">RESSOURCES</h3>
+                <p>Entrance examination</p>
+                <p>Scholarships</p>
+
            </div>
 
             <div className="part">
-                <h3>SCHOOLS TYPES</h3>
-                <p>About us</p>
-                <p>About us</p>
-                <p>About us</p>
-                <p>About us</p>
+                <h3 className="py-2">SCHOOLS TYPES</h3>
+                <p>Universities</p>
+                <p>IPES</p>
+                <p>Training center</p>
+                <p>Others</p>
            </div>
 
-           <div className="part">
-                <h3>EXAMS</h3>
-                <p>About us</p>
-                <p>About us</p>
-                <p>About us</p>
-                <p>About us</p>
-           </div>
 
-           <div className="part">
-                <h3>SCHOLARSHIPS</h3>
-                <p>About us</p>
-                <p>About us</p>
-                <p>About us</p>
-                <p>About us</p>
-           </div>
+
+
 
                <div className="part">
-                <h3>GET IN TOUCH</h3>
+                <h3 className="py-2">GET IN TOUCH</h3>
                 <div className="flex flex-row justify-between">
                 <p>
                     <a href="#">

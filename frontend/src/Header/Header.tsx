@@ -1,4 +1,5 @@
-import React, {useState} from "react"
+import React, {useState} from "react";
+import { Link } from "react-router-dom"
 
 const Header = () => {
 
@@ -33,37 +34,37 @@ const Header = () => {
             <nav className=" w-fulsl px-5 absolute list-none  right-0 left-0 z-10 text-blue-400 bg-[#1a1a37]">
                 <div className=" mx-auto flex py-5 justify-between font-comf">
                     <div>
-                        <a href="#" className="text-lg  py-2 px-4 rounded-md bg-transparent text-white   transition-all">Schoolers Logo</a>
+                        <Link to="#" className="text-lg  py-2 px-4 rounded-md bg-transparent text-white   transition-all">Schoolers Logo</Link>
                     </div>
                     <ul className="hidden  flex list-none md:flex items-center space-x-1">
-                        <a href="#">
+                        <Link to="/universities">
                             <li
                                 className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all">
                                 Universities
                             </li>
-                        </a>
-                        <a href="">
+                        </Link>
+                        <Link to="">
                             <li
                                 className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all">
                                 Programs
                             </li>
-                        </a>
-                        <a href="">
+                        </Link>
+                        <Link to="">
                             <li
                                 className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all">
                                 Fields of Study
                             </li>
-                        </a>
-                        <a href="">
+                        </Link>
+                        <Link to="">
                             <li
                                 className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all">
                                 fr
                             </li>
-                        </a>
+                        </Link>
                         <div className="rounded-full py-2 px-4 border-1 bg-amber-500 hover:bg-amber-300">
-                            <a className="space-x-5  rounded-md bg-transparent text-white  hover:text-white transition-all" href="">
+                            <Link className="space-x-5  rounded-md bg-transparent text-white  hover:text-white transition-all" to="">
                                 <button>Sign In</button>
-                            </a>
+                            </Link>
                         </div>
                     </ul>
 
@@ -76,13 +77,13 @@ const Header = () => {
 
                         <div className= { !menuDisplay ?  `md:hidden main_menu  w-0 fixed top-0 left-0  z-1 h-full overflow-x-hidden bg-gray-700 ` : `md:hidden main_menu  w-0 fixed top-0 left-0 z-1 overflow-x-hidden  h-full  bg-gray-700 `}  >
                             <ul className="testing_list  py-14 px-4  bg-gray-700 ">
-                                <li className="w-1/2 px-1"><a href=""className="block  px-1 py-7  text-white  font-semibold">Universities</a>
+                                <li className="w-1/2 px-1"><Link to="" className="block  px-1 py-7  text-white  font-semibold">Universities</Link>
                                 </li>
-                                <li className="w-1/2 px-1"><a href=""className="block px-1 py-7 hover:bg-green-500 transition duration-300">Programs</a>
+                                <li className="w-1/2 px-1"><Link to=""className="block px-1 py-7 hover:bg-green-500 transition duration-300">Programs</Link>
                                 </li>
-                                <li className="w-1/2 px-1"><a href="" className="block  px-1 py-7 hover:bg-green-500 transition duration-300">Fields of study</a>
+                                <li className="w-1/2 px-1"><Link to="" className="block  px-1 py-7 hover:bg-green-500 transition duration-300">Fields of study</Link>
                                 </li>
-                                <li className="w-1/2 px-1"><a href="" className="block  px-1 py-7  hover:bg-green-500 transition duration-300">FR</a></li>
+                                <li className="w-1/2 px-1"><Link to="" className="block  px-1 py-7  hover:bg-green-500 transition duration-300">FR</Link></li>
                             </ul>
                         </div>
 
