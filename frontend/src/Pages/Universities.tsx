@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { schoolList } from "../actions/schoolActions";
 import OrientationImage from "../images/orientation.jpg"
 import IucImage from "../images/iuc.png"
@@ -59,11 +60,11 @@ function Universities() {
                             <div className="pp_university bg-white h-[75px] w-[75px] shadow-[0_5px_5px_0_rgba(0,0,0,0.5)]  rounded-2xl">
                                 <img src={IucImage} className="rounded-full h-full w-full" alt="" />
                             </div>
-                            <div className="photo_university">
-                                <i className="fa-regular fa-thumbs-up"></i>
+                            <div className="like_university h-[45px] w-[45px] px-1 py-1 shadow-[0_5px_5px_0_rgba(0,0,0,0.5)]">
+                                <i className="fa-regular fa-thumbs-up fa-2x"></i>
                             </div>
                     <div className="school_description">
-                        <h1 className="text-center text-2xl font-bold ">{school.name}</h1>
+                        <h1 className="text-center text-2xl font-bold mt-2">{school.name}</h1>
 
                         <div className="location">
                             <span> <i className="fa-sharp fa-solid fa-location-pin"></i>Douala</span>
@@ -73,9 +74,9 @@ function Universities() {
                            {school.description}
                         </p>
                     </div>
-                    <a className="flex justify-center m-4 rounded-md bg-transparent text-white  hover:text-white transition-all" href="">
+                    <Link to="/universities" className="flex justify-center m-4 rounded-md bg-transparent text-white  hover:text-white transition-all">
                         <button className=" rounded-full  py-2 px-14 border-1 bg-amber-500 hover:bg-amber-300">Read more</button>
-                    </a>
+                    </Link>
                 </div>
                
                 </div>
