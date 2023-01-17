@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="Setting the actions, reducers for schools and details">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="adding loader">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +13,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -105,6 +105,8 @@
       <workItem from="1673607102251" duration="3336000" />
       <workItem from="1673641103591" duration="6863000" />
       <workItem from="1673682576931" duration="627000" />
+      <workItem from="1673938833964" duration="865000" />
+      <workItem from="1673944875841" duration="4978000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -288,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673445423384</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="adding loader">
+      <created>1673950472180</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1673950472180</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +316,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="updating the readme" />
     <MESSAGE value="models of schools and category + migrations" />
     <MESSAGE value="add frontend + setting tailwindcss" />
     <MESSAGE value="navbar 1" />
@@ -332,6 +340,7 @@
     <MESSAGE value="Setting the constant for schools" />
     <MESSAGE value="Setting the actions for schools" />
     <MESSAGE value="Setting the actions, reducers for schools and details" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting the actions, reducers for schools and details" />
+    <MESSAGE value="adding loader" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding loader" />
   </component>
 </project>
