@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="adding loader">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="field of study">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +107,14 @@
       <workItem from="1673641103591" duration="6863000" />
       <workItem from="1673682576931" duration="627000" />
       <workItem from="1673938833964" duration="865000" />
-      <workItem from="1673944875841" duration="4978000" />
+      <workItem from="1673944875841" duration="8922000" />
+      <workItem from="1674045018046" duration="1464000" />
+      <workItem from="1674113309007" duration="1306000" />
+      <workItem from="1674457069068" duration="1230000" />
+      <workItem from="1674477209505" duration="2171000" />
+      <workItem from="1674537194532" duration="405000" />
+      <workItem from="1674538263616" duration="8805000" />
+      <workItem from="1674640913573" duration="4506000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -297,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673950472180</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="field of study">
+      <created>1673952228430</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1673952228430</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +331,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="models of schools and category + migrations" />
     <MESSAGE value="add frontend + setting tailwindcss" />
     <MESSAGE value="navbar 1" />
     <MESSAGE value="navbar 2(hover, background and button) + Banner picture" />
@@ -341,6 +355,7 @@
     <MESSAGE value="Setting the actions for schools" />
     <MESSAGE value="Setting the actions, reducers for schools and details" />
     <MESSAGE value="adding loader" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding loader" />
+    <MESSAGE value="field of study" />
+    <option name="LAST_COMMIT_MESSAGE" value="field of study" />
   </component>
 </project>
