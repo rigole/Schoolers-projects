@@ -3,17 +3,21 @@ from dataclasses import fields
 from .models import School, Category, StudyField, Program, EntranceExamination
 
 
-class SchoolSerialiser(serializers.ModelSerializer):
-    class Meta:
-        model = School
-        fields = '__all__'
+
         
         
 
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = '__all__'
+        fields = ("category_id", "category_name")
+
+
+class SchoolSerialiser(serializers.ModelSerializer):
+    category_name = serializers.SlugRelatedField(slug_field="category_name", read_only=True)
+    class Meta:
+        model = School
+        fields = ('user', 'name', 'image', 'description', 'rating','school_id','category_name','coverImage')
         
         
 class StudyFieldSerializer(serializers.ModelSerializer):

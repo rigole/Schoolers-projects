@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="field of study">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="displaying card universities in center">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/schools/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/schools/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/schools/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/schools/serializers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +116,13 @@
       <workItem from="1674477209505" duration="2171000" />
       <workItem from="1674537194532" duration="405000" />
       <workItem from="1674538263616" duration="8805000" />
-      <workItem from="1674640913573" duration="4506000" />
+      <workItem from="1674640913573" duration="9213000" />
+      <workItem from="1674716751686" duration="1819000" />
+      <workItem from="1674727512261" duration="599000" />
+      <workItem from="1674740361090" duration="4534000" />
+      <workItem from="1674818275918" duration="9163000" />
+      <workItem from="1674901195055" duration="4971000" />
+      <workItem from="1674909624900" duration="1503000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -312,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673952228430</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="displaying card universities in center">
+      <created>1674648052956</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1674648052957</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +346,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add frontend + setting tailwindcss" />
     <MESSAGE value="navbar 1" />
     <MESSAGE value="navbar 2(hover, background and button) + Banner picture" />
     <MESSAGE value="Banner text + button" />
@@ -356,6 +370,7 @@
     <MESSAGE value="Setting the actions, reducers for schools and details" />
     <MESSAGE value="adding loader" />
     <MESSAGE value="field of study" />
-    <option name="LAST_COMMIT_MESSAGE" value="field of study" />
+    <MESSAGE value="displaying card universities in center" />
+    <option name="LAST_COMMIT_MESSAGE" value="displaying card universities in center" />
   </component>
 </project>
