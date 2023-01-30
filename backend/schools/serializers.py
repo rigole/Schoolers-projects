@@ -17,7 +17,7 @@ class SchoolSerialiser(serializers.ModelSerializer):
     category_name = serializers.SlugRelatedField(slug_field="category_name", read_only=True)
     class Meta:
         model = School
-        fields = ('user', 'name', 'image', 'description', 'rating','school_id','category_name','coverImage')
+        fields = ('user', 'name', 'image', 'description', 'rating','school_id','category_name','coverImage', 'location')
         
         
 class StudyFieldSerializer(serializers.ModelSerializer):

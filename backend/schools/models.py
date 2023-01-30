@@ -22,6 +22,7 @@ class School(models.Model):
     school_id = models.AutoField(primary_key=True, editable=False)
     category_name = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
     coverImage = models.ImageField(null=True, blank=True)
+    location = models.CharField(max_length=255, blank=False, null=True)
 
     def __str__(self):
         return self.name
