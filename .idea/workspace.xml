@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="setting the basic card of the field of study + adding the field description for the field of study model">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="final card for field of study">
+      <change afterPath="$PROJECT_DIR$/backend/schools/migrations/0010_studyfield_description_studyfield_image.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
     </list>
@@ -14,8 +15,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -125,7 +126,7 @@
       <workItem from="1675164795239" duration="2017000" />
       <workItem from="1675227206510" duration="1487000" />
       <workItem from="1675234347752" duration="5421000" />
-      <workItem from="1675251477582" duration="4889000" />
+      <workItem from="1675251477582" duration="6633000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -365,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675253998732</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="final card for field of study">
+      <created>1675256754907</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1675256754970</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +392,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Displaying sidebar menu and changing icon during to click" />
     <MESSAGE value="displaying sidebar with animation on mobile devices" />
     <MESSAGE value="setting the abroad component and responsive" />
     <MESSAGE value="fixing the navbar to top" />
@@ -409,6 +416,7 @@
     <MESSAGE value="setting the rating component to be used for rating school" />
     <MESSAGE value="adding rating on the backend and  on universities components" />
     <MESSAGE value="setting the basic card of the field of study + adding the field description for the field of study model" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting the basic card of the field of study + adding the field description for the field of study model" />
+    <MESSAGE value="final card for field of study" />
+    <option name="LAST_COMMIT_MESSAGE" value="final card for field of study" />
   </component>
 </project>
