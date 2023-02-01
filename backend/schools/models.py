@@ -31,6 +31,8 @@ class School(models.Model):
 class StudyField(models.Model):
     name = models.CharField(max_length=255, null=False, blank=True)
     field_id = models.AutoField(primary_key=True, editable=False)
+    description = models.TextField(null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
     
     def __str__(self):
         return self.name
