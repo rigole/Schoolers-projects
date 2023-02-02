@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="reducers and contant for the field of study">
-      <change afterPath="$PROJECT_DIR$/backend/schools/urls/fields_of_study_urls.py" afterDir="false" />
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="actions for the field of study + urls and views in the backend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/schools/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/schools/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +124,8 @@
       <workItem from="1675164795239" duration="2017000" />
       <workItem from="1675227206510" duration="1487000" />
       <workItem from="1675234347752" duration="5421000" />
-      <workItem from="1675251477582" duration="8314000" />
+      <workItem from="1675251477582" duration="9067000" />
+      <workItem from="1675320381744" duration="5876000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -381,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675279088850</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="actions for the field of study + urls and views in the backend">
+      <created>1675281079821</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1675281079821</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +405,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="setting the abroad component and responsive" />
     <MESSAGE value="fixing the navbar to top" />
     <MESSAGE value="adding the Orientation section" />
     <MESSAGE value="final position of the orientation section" />
@@ -425,6 +429,7 @@
     <MESSAGE value="setting the basic card of the field of study + adding the field description for the field of study model" />
     <MESSAGE value="final card for field of study" />
     <MESSAGE value="reducers and contant for the field of study" />
-    <option name="LAST_COMMIT_MESSAGE" value="reducers and contant for the field of study" />
+    <MESSAGE value="actions for the field of study + urls and views in the backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="actions for the field of study + urls and views in the backend" />
   </component>
 </project>
