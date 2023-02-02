@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from schools.models import School
+from schools.models import School,StudyField
 from rest_framework.response import Response
-from schools.serializers import SchoolSerialiser
+from schools.serializers import SchoolSerialiser, StudyFieldSerializer
 from rest_framework import status
 from rest_framework.decorators import api_view
 
@@ -12,4 +12,13 @@ from rest_framework.decorators import api_view
 def getAllSchools(request):
     schools = School.objects.all()
     serializer = SchoolSerialiser(schools, many=True)
+    return Response(serializer.data)
+
+
+
+#View to get all Fields of Study
+@api_view(['GET'])
+def getAllFieldOfStudies(request):
+    fieldOfStudies = StudyField.objects.all()
+    serializer = StudyFieldSerializer(fieldOfStudies, many=True)
     return Response(serializer.data)
