@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="actions for the field of study + urls and views in the backend">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="fields of study name position">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +126,8 @@
       <workItem from="1675227206510" duration="1487000" />
       <workItem from="1675234347752" duration="5421000" />
       <workItem from="1675251477582" duration="9067000" />
-      <workItem from="1675320381744" duration="5876000" />
+      <workItem from="1675320381744" duration="6486000" />
+      <workItem from="1675336731154" duration="4286000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -386,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675281079821</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="fixing the bug of field of  study list reducers">
+      <created>1675327210328</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1675327210860</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,8 +414,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixing the navbar to top" />
-    <MESSAGE value="adding the Orientation section" />
     <MESSAGE value="final position of the orientation section" />
     <MESSAGE value="university component + search bar and responsive" />
     <MESSAGE value="filters + criteria" />
@@ -430,6 +437,8 @@
     <MESSAGE value="final card for field of study" />
     <MESSAGE value="reducers and contant for the field of study" />
     <MESSAGE value="actions for the field of study + urls and views in the backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="actions for the field of study + urls and views in the backend" />
+    <MESSAGE value="fixing the bug of field of  study list reducers" />
+    <MESSAGE value="fields of study name position" />
+    <option name="LAST_COMMIT_MESSAGE" value="fields of study name position" />
   </component>
 </project>
