@@ -22,3 +22,12 @@ def getAllFieldOfStudies(request):
     fieldOfStudies = StudyField.objects.all()
     serializer = StudyFieldSerializer(fieldOfStudies, many=True)
     return Response(serializer.data)
+
+
+#View to get one school
+@api_view(['GET'])
+def getSchool(request,pk):
+    school = School.objects.get(school_id=pk)
+    serializer = SchoolSerialiser(school, many=False)
+    return Response(serializer.data)
+

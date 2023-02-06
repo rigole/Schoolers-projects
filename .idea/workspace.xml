@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="fields of study name position">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="testing and adding images for field of study">
+      <change afterPath="$PROJECT_DIR$/backend/static/images/computerscience.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/schools/urls/school_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/schools/urls/school_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/schools/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/schools/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -127,7 +130,10 @@
       <workItem from="1675234347752" duration="5421000" />
       <workItem from="1675251477582" duration="9067000" />
       <workItem from="1675320381744" duration="6486000" />
-      <workItem from="1675336731154" duration="4286000" />
+      <workItem from="1675336731154" duration="5244000" />
+      <workItem from="1675500048678" duration="4649000" />
+      <workItem from="1675585225815" duration="1733000" />
+      <workItem from="1675665153215" duration="8823000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -395,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675327210860</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="testing and adding images for field of study">
+      <created>1675341998487</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1675341998487</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,7 +427,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="final position of the orientation section" />
     <MESSAGE value="university component + search bar and responsive" />
     <MESSAGE value="filters + criteria" />
     <MESSAGE value="setting the card of school result part-1" />
@@ -439,6 +451,7 @@
     <MESSAGE value="actions for the field of study + urls and views in the backend" />
     <MESSAGE value="fixing the bug of field of  study list reducers" />
     <MESSAGE value="fields of study name position" />
-    <option name="LAST_COMMIT_MESSAGE" value="fields of study name position" />
+    <MESSAGE value="testing and adding images for field of study" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing and adding images for field of study" />
   </component>
 </project>
