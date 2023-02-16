@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="getting details for one school">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="cover and profile photo for university details">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +134,7 @@
       <workItem from="1676215750939" duration="1920000" />
       <workItem from="1676366206566" duration="4033000" />
       <workItem from="1676460081683" duration="3537000" />
-      <workItem from="1676540274349" duration="3378000" />
+      <workItem from="1676540274349" duration="7380000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -424,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676217037966</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="cover and profile photo for university details">
+      <created>1676545643888</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1676545643888</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +449,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="setting the card of school result(disposing elements) part-2" />
     <MESSAGE value="adding the profile picture" />
     <MESSAGE value="final position of the card" />
     <MESSAGE value="adding icon for like" />
@@ -468,6 +473,7 @@
     <MESSAGE value="- setting view,url of one school&#10;- components of school details" />
     <MESSAGE value="- setting view,url of one school&#10;- component of school details" />
     <MESSAGE value="getting details for one school" />
-    <option name="LAST_COMMIT_MESSAGE" value="getting details for one school" />
+    <MESSAGE value="cover and profile photo for university details" />
+    <option name="LAST_COMMIT_MESSAGE" value="cover and profile photo for university details" />
   </component>
 </project>
