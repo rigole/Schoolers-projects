@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="- setting view,url of one school&#10;- component of school details">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="getting details for one school">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +132,10 @@
       <workItem from="1675585225815" duration="1733000" />
       <workItem from="1675665153215" duration="14135000" />
       <workItem from="1676038374416" duration="5767000" />
-      <workItem from="1676215750939" duration="1127000" />
+      <workItem from="1676215750939" duration="1920000" />
+      <workItem from="1676366206566" duration="4033000" />
+      <workItem from="1676460081683" duration="3537000" />
+      <workItem from="1676540274349" duration="3378000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -413,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675681211135</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="getting details for one school">
+      <created>1676217037966</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1676217037966</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +443,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="setting the card of school result part-1" />
     <MESSAGE value="setting the card of school result(disposing elements) part-2" />
     <MESSAGE value="adding the profile picture" />
     <MESSAGE value="final position of the card" />
@@ -457,6 +467,7 @@
     <MESSAGE value="testing and adding images for field of study" />
     <MESSAGE value="- setting view,url of one school&#10;- components of school details" />
     <MESSAGE value="- setting view,url of one school&#10;- component of school details" />
-    <option name="LAST_COMMIT_MESSAGE" value="- setting view,url of one school&#10;- component of school details" />
+    <MESSAGE value="getting details for one school" />
+    <option name="LAST_COMMIT_MESSAGE" value="getting details for one school" />
   </component>
 </project>
