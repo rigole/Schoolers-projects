@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="cover and profile photo for university details 2">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="tabs on informations of the university">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +13,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -135,7 +135,9 @@
       <workItem from="1676366206566" duration="4033000" />
       <workItem from="1676460081683" duration="3537000" />
       <workItem from="1676540274349" duration="7417000" />
-      <workItem from="1676625779212" duration="4193000" />
+      <workItem from="1676625779212" duration="7126000" />
+      <workItem from="1676805858614" duration="5908000" />
+      <workItem from="1676885640943" duration="8570000" />
     </task>
     <task id="LOCAL-00001" summary="updating the readme">
       <created>1663593334180</created>
@@ -438,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676558275792</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="tabos on informations of the university">
+      <created>1676632921697</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1676632921697</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,7 +466,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="final position of the card" />
     <MESSAGE value="adding icon for like" />
     <MESSAGE value="adding redux and axios" />
     <MESSAGE value="Setting the constant for schools" />
@@ -482,6 +490,7 @@
     <MESSAGE value="getting details for one school" />
     <MESSAGE value="cover and profile photo for university details" />
     <MESSAGE value="cover and profile photo for university details 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="cover and profile photo for university details 2" />
+    <MESSAGE value="tabos on informations of the university" />
+    <option name="LAST_COMMIT_MESSAGE" value="tabos on informations of the university" />
   </component>
 </project>
