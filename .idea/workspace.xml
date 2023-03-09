@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="setting the views, urls for the programs">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="actions + reducers + contants + programs components">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,14 +148,8 @@
       <workItem from="1677832334125" duration="4519000" />
       <workItem from="1677945781881" duration="7011000" />
       <workItem from="1678005079270" duration="4126000" />
-      <workItem from="1678187946858" duration="4378000" />
-    </task>
-    <task id="LOCAL-00002" summary="models of schools and category + migrations">
-      <created>1664116340259</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1664116340259</updated>
+      <workItem from="1678187946858" duration="7670000" />
+      <workItem from="1678356333042" duration="12014000" />
     </task>
     <task id="LOCAL-00003" summary="models of schools and category + migrations">
       <created>1664116487935</created>
@@ -493,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677951709306</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="actions + reducers + contants + programs components">
+      <created>1678194629695</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1678194629698</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,7 +513,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="field of study" />
     <MESSAGE value="displaying card universities in center" />
     <MESSAGE value="getting the cetegory name by working with foreign key in django" />
     <MESSAGE value="updating model of school for locations and render it" />
@@ -537,6 +537,7 @@
     <MESSAGE value="setting media queries bugs for tabs" />
     <MESSAGE value="setting bugs for animations, postions of details in mobile" />
     <MESSAGE value="setting the views, urls for the programs" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting the views, urls for the programs" />
+    <MESSAGE value="actions + reducers + contants + programs components" />
+    <option name="LAST_COMMIT_MESSAGE" value="actions + reducers + contants + programs components" />
   </component>
 </project>
