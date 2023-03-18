@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="fixing programs components bug">
+    <list default="true" id="6feb821e-176f-43d7-8098-9eb3860a50be" name="Changes" comment="filter on universities">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,14 +153,7 @@
       <workItem from="1678614515760" duration="5592000" />
       <workItem from="1678952100783" duration="87000" />
       <workItem from="1678953674622" duration="6105000" />
-      <workItem from="1679129371629" duration="3318000" />
-    </task>
-    <task id="LOCAL-00004" summary="add frontend + setting tailwindcss">
-      <created>1669531215827</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1669531215827</updated>
+      <workItem from="1679129371629" duration="9766000" />
     </task>
     <task id="LOCAL-00005" summary="navbar 1">
       <created>1669538166119</created>
@@ -498,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678374738983</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="filter on universities">
+      <created>1679143697548</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1679143697556</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,7 +517,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="getting the cetegory name by working with foreign key in django" />
     <MESSAGE value="updating model of school for locations and render it" />
     <MESSAGE value="setting the rating component to be used for rating school" />
     <MESSAGE value="adding rating on the backend and  on universities components" />
@@ -542,6 +541,7 @@
     <MESSAGE value="setting the views, urls for the programs" />
     <MESSAGE value="actions + reducers + contants + programs components" />
     <MESSAGE value="fixing programs components bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing programs components bug" />
+    <MESSAGE value="filter on universities" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter on universities" />
   </component>
 </project>
