@@ -52,37 +52,39 @@ function Universities() {
                     </span>
                 </div>
             </div>
-            <div className="flex school_list">
-                {
-                    schools.map(school => (
-                        <div className="relative university_singe_card w-[350px] h-[590px] shadow-[0_30px_30px_0_rgba(0,0,0,0.5)] rounded-2xl my-9 ml-4">
-                            <div className="h-[40%] w-full">
-                                <img src={OrientationImage} className="rounded-t-2xl" alt="" />
-        
-                                    <div className="pp_university bg-white h-[75px] w-[75px] shadow-[0_5px_5px_0_rgba(0,0,0,0.5)]  rounded-2xl">
-                                        <img src={IucImage} className="rounded-full h-full w-full" alt="" />
+            <div className="school_list">
+                { loading ? <Loader/>
+                    : error ? <h1>Error</h1>
+                        :
+                        schools.map(school => (
+                            <div className="relative university_single_card  shadow-[0_30px_30px_0_rgba(0,0,0,0.5)] rounded-2xl my-9 ml-4">
+                                <div className="h-[40%] w-full">
+                                    <img src={OrientationImage} className="rounded-t-2xl" alt="" />
+            
+                                        <div className="pp_university bg-white h-[75px] w-[75px] shadow-[0_5px_5px_0_rgba(0,0,0,0.5)]  rounded-2xl">
+                                            <img src={IucImage} className="rounded-full h-full w-full" alt="" />
+                                        </div>
+                                        <div className="like_university h-[45px] w-[45px] px-1 py-1 shadow-[0_5px_5px_0_rgba(0,0,0,0.5)]">
+                                            <i className="fa-regular fa-thumbs-up fa-2x"></i>
+                                        </div>
+                                <div className="school_description">
+                                    <h1 className="text-center text-2xl font-bold mt-2">{school.name}</h1>
+            
+                                    <div className="location">
+                                        <span> <i className="fa-sharp fa-solid fa-location-pin"></i>Douala</span>
+                                        <span><i className="fa-solid fa-school"></i> private</span>
                                     </div>
-                                    <div className="like_university h-[45px] w-[45px] px-1 py-1 shadow-[0_5px_5px_0_rgba(0,0,0,0.5)]">
-                                        <i className="fa-regular fa-thumbs-up fa-2x"></i>
-                                    </div>
-                            <div className="school_description">
-                                <h1 className="text-center text-2xl font-bold mt-2">{school.name}</h1>
-        
-                                <div className="location">
-                                    <span> <i className="fa-sharp fa-solid fa-location-pin"></i>Douala</span>
-                                    <span><i className="fa-solid fa-school"></i> private</span>
+                                    <p className="text-center m-4">
+                                    {school.description}
+                                    </p>
                                 </div>
-                                <p className="text-center m-4">
-                                   {school.description}
-                                </p>
+                                <Link to="/universities" className="flex justify-center m-4 rounded-md bg-transparent text-white  hover:text-white transition-all">
+                                    <button className=" rounded-full  py-2 px-14 border-1 bg-amber-500 hover:bg-amber-300">Read more</button>
+                                </Link>
                             </div>
-                            <Link to="/universities" className="flex justify-center m-4 rounded-md bg-transparent text-white  hover:text-white transition-all">
-                                <button className=" rounded-full  py-2 px-14 border-1 bg-amber-500 hover:bg-amber-300">Read more</button>
-                            </Link>
-                        </div>
-                      </div>
-                    ))} 
                 </div>
+                        ))} 
+            </div>
 
               
         </section>

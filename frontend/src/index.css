@@ -13,30 +13,19 @@ body {
   background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
 }
 
-@media screen and (max-width: 575px){
-  .choices{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .nosubmit{
-    width: 70%;
-  }
-
-  .filters {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .criteria {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
+.school_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
 }
+
+.university_single_card{
+  /*margin: 5rem;*/
+  width: 450px;
+}
+
+
 
 .footer {
   width: 100%;
@@ -55,10 +44,7 @@ div .pp_university{
   
 
 }
-.school_list{
-  display: flex;
-  justify-content: space-around;
-}
+
 
 .school_description{
   padding-top: 1rem;
@@ -89,13 +75,27 @@ div .like_university {
   cursor: pointer;
 }
 
+
+
+
 @media  screen and (max-width: 575px) {
+
   .footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
     
+  }
+
+  .filters{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .criteria{
+    display: flex;
+    flex-direction: column;
   }
   .part {
     padding: 1rem;
@@ -107,8 +107,30 @@ div .like_university {
     justify-content: center;
   }
 
-  .university_singe_card{
+  .university_single_card{
     display: flex;
+    justify-content: center;
+  }
+
+  .choices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nosubmit{
+    width: 70%;
+  }
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .criteria {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 
