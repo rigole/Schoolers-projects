@@ -3,8 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { schoolList } from "../actions/schoolActions";
 import OrientationImage from "../images/orientation.jpg";
-import Loader from "../components/Loader/Loader"
-import IucImage from "../images/iuc.png"
+import Loader from "../components/Loader/Loader";
+import IucImage from "../images/iuc.png";
+import Button from "../components/Button/Button";
 
 function Universities() {
 
@@ -79,7 +80,7 @@ function Universities() {
                                     </p>
                                 </div>
                                 <Link to="/universities" className="flex justify-center m-4 rounded-md bg-transparent text-white  hover:text-white transition-all">
-                                    <button className=" rounded-full  py-2 px-14 border-1 bg-amber-500 hover:bg-amber-300">Read more</button>
+                                    <Button text="Read More" paddingX={14} paddingY={2} marginTop={0}/>
                                 </Link>
                             </div>
                 </div>

@@ -35,13 +35,15 @@ body {
   padding: 5rem;
   color: #ffff;
   background-color: #1a1a37;
+
 }
+
 div .pp_university{
   position: absolute;
   top: 0;
-  margin-top: 11rem;
+  margin-top: 16rem;
   margin-left: 0.5rem;
-  
+
 
 }
 
@@ -58,23 +60,88 @@ div .location {
 
 
 
-.like_university{
+div .like_university{
   display: flex;
   flex-direction: row-reverse;
-
+  margin-top: 17rem;
 }
+/*
+
+<button className="rounded-full  py-2 px-14
+                             border-1 bg-amber-500 hover:bg-amber-300">Explore</button>
+
+*/
 
 div .like_university {
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: 13rem;
+
   margin-right: 0.5rem;
   border-radius: 50%;
   background-color: white;
   cursor: pointer;
 }
 
+
+@media screen and (max-width: 375px){
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    
+  }
+
+  .filters{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .criteria{
+    display: flex;
+    flex-direction: column;
+  }
+  .part {
+    padding: 1rem;
+  }
+
+  .school_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .university_single_card{
+    display: flex;
+    justify-content: center;
+  }
+
+  .choices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nosubmit{
+    width: 70%;
+  }
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .criteria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+}
 
 
 

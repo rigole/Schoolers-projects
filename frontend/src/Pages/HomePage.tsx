@@ -1,7 +1,7 @@
 import React from "react";
 import ImageBanner from "../images/banner.jpg";
-import OrientationImage from "../images/orientation.jpg"
-
+import OrientationImage from "../images/orientation.jpg";
+import Button from "../components/Button/Button";
 const HomePage = () => {
 
     return (
@@ -18,7 +18,7 @@ const HomePage = () => {
                                 <p>Search schools according to your criteria, and where you fits according to your ambitions</p>
 
                                     <a className="space-x-5  rounded-md bg-transparent text-white  hover:text-white transition-all" href="">
-                                        <button className="rounded-full mt-4 py-2 px-14 border-1 bg-amber-500 hover:bg-amber-300">Get started</button>
+                                        <Button text="Get started" paddingX={14} paddingY={2} marginTop={4}/>
                                     </a>
 
                             </div>
@@ -37,7 +37,7 @@ const HomePage = () => {
                             <p className="text-center">You can also get all the informations about all examination entrance<br/>  of some schools either privates or publics schools</p>
                         </div>
                         <a className="space-x-5  rounded-md bg-transparent text-white  hover:text-white transition-all" href="">
-                            <button className="rounded-full mt-4 py-2 px-14 border-1 bg-amber-500 hover:bg-amber-300">Get informations</button>
+                            <Button text="Get informations" paddingX={14} paddingY={2} marginTop={4}/>
                         </a>
                     </div>        
                 </div>
@@ -51,21 +51,21 @@ const HomePage = () => {
                     <div className="text-center py-4 px-4">
                         <p className="text-center">I just want to check countries according to my criteria</p>
                         <a className="space-x-5  rounded-md bg-transparent text-white  hover:text-white transition-all" href="#">
-                            <button className="rounded-full  py-2 px-14 border-1 bg-amber-500 hover:bg-amber-300">Explore</button>
+                            <Button text="Explore" paddingX={14} paddingY={2} marginTop={0}/>
                         </a>
                     </div>
 
                     <div className="text-center py-4 px-4">
                         <p className="text-center">I want to  check some of the financial resources for me</p>
                         <a className="space-x-5   rounded-md bg-transparent text-white  hover:text-white transition-all" href="#">
-                            <button className="rounded-full text-center py-2 px-14 border-1 bg-amber-500 hover:bg-amber-300">Explore</button>
+                            <Button text="Explore" paddingX={14} paddingY={2} marginTop={0}/>
                         </a>
                     </div>
 
                     <div className="text-center py-4 px-4">
                         <p className="text-center">I want to explore procedures for some countries</p>
                         <a className="space-x-5  rounded-md bg-transparent text-white hover:text-white transition-all" href="#">
-                            <button className="rounded-full py-2 px-14 border-1 bg-amber-500 hover:bg-amber-300 ">Explore</button>
+                            <Button text="Explore" paddingX={14} paddingY={2} marginTop={0}/>
                         </a>
                     </div>
                 </div>

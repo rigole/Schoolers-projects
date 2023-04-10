@@ -36,7 +36,7 @@ const Header = () => {
                     <div>
                         <Link to="#" className="text-lg  py-2 px-4 rounded-md bg-transparent text-white   transition-all">Schoolers Logo</Link>
                     </div>
-                    <ul className="hidden  flex list-none md:flex items-center space-x-1">
+                    <ul className="hidden  list-none md:flex items-center space-x-1">
                         <Link to="/universities">
                             <li
                                 className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all">
