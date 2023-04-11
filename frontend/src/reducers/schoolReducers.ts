@@ -26,10 +26,10 @@ export const schoolReducers = (state = {schools: [] }, action:any) => {
 
 }
 
-export const schoolDetails = (state = { school: {reviews:[]} }, action:any) => {
+export const schoolDetails = (state = { school: [] }, action:any) => {
     switch (action.type) {
         case SCHOOL_DETAILS_REQUEST:
-            return {loading: true, ...state}
+            return {loading: true, school: []}
 
         case SCHOOL_DETAILS_SUCCESS:
             return {loading: false, school: action.payload}

@@ -6,12 +6,15 @@ import OrientationImage from "../images/orientation.jpg";
 import Loader from "../components/Loader/Loader";
 import IucImage from "../images/iuc.png";
 import Button from "../components/Button/Button";
+import { useParams } from "react-router-dom";
 
 function Universities() {
 
     const dispatch = useDispatch();
     const school_list = useSelector((state:any) => state.schoolList);
     const { schools, loading, error } = school_list;
+
+    
 
     useEffect(() => {
         dispatch<any>(schoolList())
@@ -79,7 +82,7 @@ function Universities() {
                                     {school.description}
                                     </p>
                                 </div>
-                                <Link to="/universities" className="flex justify-center m-4 rounded-md bg-transparent text-white  hover:text-white transition-all">
+                                <Link to={`/universities/${school.school_id}`} className="flex justify-center m-4 rounded-md bg-transparent text-white  hover:text-white transition-all">
                                     <Button text="Read More" paddingX={14} paddingY={2} marginTop={0}/>
                                 </Link>
                             </div>

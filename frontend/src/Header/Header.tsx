@@ -43,13 +43,13 @@ const Header = () => {
                                 Universities
                             </li>
                         </Link>
-                        <Link to="">
+                        <Link to="/programs">
                             <li
                                 className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all">
                                 Programs
                             </li>
                         </Link>
-                        <Link to="">
+                        <Link to="/fields">
                             <li
                                 className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all">
                                 Fields of Study
