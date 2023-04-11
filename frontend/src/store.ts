@@ -1,10 +1,11 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension"
 import thunk from "redux-thunk"
-import { schoolReducers } from "./reducers/schoolReducers";
+import { schoolReducers, schoolDetails } from "./reducers/schoolReducers";
 
 const reducer = combineReducers({
-    schoolList: schoolReducers
+    schoolList: schoolReducers,
+    school_details: schoolDetails,
 })
 
 const middleware = [thunk]

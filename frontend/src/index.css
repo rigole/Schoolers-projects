@@ -65,12 +65,7 @@ div .like_university{
   flex-direction: row-reverse;
   margin-top: 17rem;
 }
-/*
 
-<button className="rounded-full  py-2 px-14
-                             border-1 bg-amber-500 hover:bg-amber-300">Explore</button>
-
-*/
 
 div .like_university {
   position: absolute;

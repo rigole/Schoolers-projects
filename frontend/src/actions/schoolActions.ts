@@ -33,12 +33,15 @@ export const schoolList = () => async (dispatch: any) => {
     }
 }
 
-export const schoolDetails = (id:any) => async (dispatch:any) => {
+export const schoolDetails = (school_id:any) => async (dispatch:any) => {
     try {
         dispatch({ type: SCHOOL_DETAILS_REQUEST })
 
-        axios.get(`/api/schools/${id}/`).then((response) => {
-            dispatch({ type: SCHOOL_DETAILS_SUCCESS, payload: response.data })
+        axios.get(`http://127.0.0.1:8000/api/schools/${school_id}/`).then((response) => {
+            dispatch({ 
+                type: SCHOOL_DETAILS_SUCCESS, 
+                payload: response.data 
+            })
         })
     } catch(error:any) {
         dispatch({

@@ -18,7 +18,7 @@ const SchoolDetails = () => {
     const navigate = useNavigate()
 
     const dispatch = useDispatch()
-    const school_details = useSelector((state:any) => state.schoolDetails)
+    const school_details = useSelector((state:any) => state.school_details)
     const { school, loading, error } = school_details
 
     useEffect(() => {
@@ -31,7 +31,7 @@ const SchoolDetails = () => {
             {loading ? <Loader/>
                 : error
                     ? <h1>Error</h1>
-                : (
+                : 
                     <div className="z-10">
                       <div className="university_info w-full h-[790px]">
                           <img className="w-full h-2/4 mt-14 object-cover" src={OrientationImage} alt=""/>
@@ -85,7 +85,7 @@ const SchoolDetails = () => {
                       </div>
                     </div>
 
-                )
+                
 
             }
         </section>
