@@ -77,7 +77,18 @@ div .like_university {
   background-color: white;
   cursor: pointer;
 }
+.pp_university_details{
+ position: absolute;
+ top: 0;
+ margin-top: 30rem;
+}
 
+.tab {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #1a1a37;
+  color: #ffffff;
+}
 
 @media screen and (max-width: 375px){
 
