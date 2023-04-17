@@ -27,13 +27,13 @@ const SchoolDetails = () => {
 
 
     return (
-        <section className="mb-35 pt-20">
+        <section className="pb-20 mb-35 pt-20">
             {loading ? <Loader/>
                 : error
                     ? <h1>Error</h1>
                 : 
-                    <div className="z-10">
-                      <div className="university_info w-full h-[790px]">
+                    <div className="">
+                      <div className="pb-20 university_info w-full h-[790px]">
                           <img className="w-full h-2/4 mt-14 object-cover" src={OrientationImage} alt=""/>
                         <div className="pp_university_details h-[75px] w-[75px] shadow-[0_5px_5px_0_rgba(0,0,0,0.5)] rounded-2xl">
                           <img src={IucImage} className="rounded-full h-full w-full" alt="" />

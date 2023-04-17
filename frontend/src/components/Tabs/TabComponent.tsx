@@ -13,7 +13,7 @@ const TabComponent = (props: Props): JSX.Element => {
 
     return (
         <div >
-            <ul className='tab '>
+            <ul className='tab'>
                 {children.map((item, index) =>(
                     <TabTitle
                         key={item.props.title}
