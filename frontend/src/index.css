@@ -77,16 +77,36 @@ div .like_university {
   background-color: white;
   cursor: pointer;
 }
+.pp_university_details{
+ position: absolute;
+ top: 0;
+ margin-top: 30rem;
+}
 
+.tab {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #1a1a37;
+  color: #ffffff;
+}
 
 @media screen and (max-width: 375px){
+  .tab{
+    display: flex;
+    flex-direction: column;
+   
+  }
 
+ /* .tabulation {
+    margin-bottom: 25rem;
+
+  }*/
   .footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
-    
+    margin-top: 15rem;
   }
 
   .filters{
@@ -142,12 +162,25 @@ div .like_university {
 
 @media  screen and (max-width: 575px) {
 
+  .tab{
+    display: flex;
+    flex-direction: column;
+
+  }
+
   .footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
+    margin-top: 15rem;
     
+  }
+
+  .university_details_name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .filters{

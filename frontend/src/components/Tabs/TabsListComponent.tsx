@@ -15,7 +15,7 @@ const TabTitle = (props: Props): JSX.Element => {
     }, [setSelectedTab, index]);
 
     return (
-        <li className={`${isActive ? 'active' : ''}`}>
+        <li className={`${isActive ? 'active bg-amber-500 py-2 px-4 hover:bg-amber-500 rounded-md' : 'py-2 px-4 hover:bg-amber-500'}`}>
             <button onClick={handleOnClick}>{title}</button>
         </li>
     );
