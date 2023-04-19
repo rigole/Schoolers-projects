@@ -10,7 +10,7 @@ const Programs = () => {
     const programs_list = useSelector((state:any) => state.programState);
 
     const { programs, loading, error } = programs_list;
-    //console.log(programs_list)
+    console.log(programs)
 
     useEffect(() =>{
         dispatch<any>(programList())
@@ -33,6 +33,7 @@ const Programs = () => {
                         ? <h1>Error</h1>
                     :
                         (
+
                             programs.map(program => (
 
                                 <div className="program_card">
@@ -44,7 +45,7 @@ const Programs = () => {
                                         <p className="program_description text-black">
                                             {program.description}
                                         </p>
-                                        <Link to="/fields:id/" className="readmore_program flex justify-center rounded-md bg-transparent text-white  hover:text-white transition-all">
+                                        <Link to={`/programs/${program.program_id}`} className="readmore_program flex justify-center rounded-md bg-transparent text-white  hover:text-white transition-all">
                                             <button className=" rounded-full  py-2 px-14 border-1 bg-amber-500 hover:bg-amber-300">Read more</button>
                                         </Link>
                                     </div>

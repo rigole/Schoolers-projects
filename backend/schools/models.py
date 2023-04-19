@@ -41,6 +41,8 @@ class StudyField(models.Model):
 class Program(models.Model):
     name = models.CharField(max_length=255, null=False, blank=True)
     duration = models.IntegerField(null=False, blank=True)
+    image = models.ImageField(null=True, blank=True)
+    description = models.TextField(null=True, blank=True)
     program_id = models.AutoField(primary_key=True, editable=False)
     
     
