@@ -48,7 +48,7 @@ const FieldStudy = () => {
                             ? <h1>Error</h1>
                         :
                             (
-                                fieldFiltered.map(field => (
+                                fieldsOfStudy.map(field => (
                                     <div className="fieldstudy_card">
                                         <div className="imgbox">
                                             <img className="field_image w-full h-full object-cover" src={`http://127.0.0.1:8000${field.image}`} alt=""/>
@@ -58,7 +58,7 @@ const FieldStudy = () => {
                                             <p className="fieldstudy_description text-black">
                                                 {field.description}
                                             </p>
-                                            <Link to="/fields:id/" className="readmore_field flex justify-center rounded-md bg-transparent text-white  hover:text-white transition-all">
+                                            <Link to={`fields/${field.field_id}`} className="readmore_field flex justify-center rounded-md bg-transparent text-white  hover:text-white transition-all">
                                                 <button className=" rounded-full  py-2 px-14 border-1 bg-amber-500 hover:bg-amber-300">Read more</button>
                                             </Link>
                                         </div>
