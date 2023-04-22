@@ -15,15 +15,16 @@ function Universities() {
     const { schools, loading, error } = school_list;
     const [input, setInput] = useState('');
 
-    const [schoolsFiltered, setSchoolsFiltered] = useState([schools])
+    const [schoolsFiltered, setSchoolsFiltered] = useState(schools)
 
     const filteredSchools = async (input) => {
-        const filtered = schools.filter(field => {
+        const filtered =  schools.filter(field => {
             return field.name.toLowerCase().includes(input.toLowerCase())
         })
         setInput(input);
         setSchoolsFiltered(filtered);
     }
+    console.log(schoolsFiltered)
 
     
 
@@ -61,7 +62,8 @@ function Universities() {
                         </label>
                     </span>
                     <span className="px-8">
-                        <label htmlFor="">admission on competition
+                        <label htmlFor="">admi
+                        ssion on competition
                             <input className="ml-1" type="checkbox"/>
                         </label>
                     </span>

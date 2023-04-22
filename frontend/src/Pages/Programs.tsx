@@ -1,15 +1,27 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "../components/Loader/Loader";
 import {Link} from "react-router-dom";
 import { programList } from "../actions/programsActions";
 
 const Programs = () => {
+    const [input, setInput] = useState('')
 
     const dispatch = useDispatch()
     const programs_list = useSelector((state:any) => state.programState);
 
     const { programs, loading, error } = programs_list;
+
+
+    const [programsFiltered, setProgramsFiltered] = useState(programs)
+
+    const filteredSchools = async (input) => {
+        const filtered =  programs.filter(program => {
+            return program.name.toLowerCase().includes(input.toLowerCase())
+        })
+        setInput(input);
+        setProgramsFiltered(filtered);
+    }
     console.log(programs)
 
     useEffect(() =>{
@@ -23,7 +35,7 @@ const Programs = () => {
             </div>
             <div className="text-center" >
                 <form className="px-0 py-0">
-                    <input className="nosubmit w-1/2 h-9 rounded-xl" type="search" placeholder="Search Programs" required/>
+                    <input value={input} onChange={(e => filteredSchools(e.target.value))} className="nosubmit w-1/2 h-9 rounded-xl" type="search" placeholder="Search Programs" required/>
                 </form>
             </div>
 
@@ -34,7 +46,7 @@ const Programs = () => {
                     :
                         (
 
-                            programs.map(program => (
+                            programsFiltered.map(program => (
 
                                 <div className="program_card">
                                     <div className="imgbox">

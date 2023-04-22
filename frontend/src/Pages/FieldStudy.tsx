@@ -48,7 +48,7 @@ const FieldStudy = () => {
                             ? <h1>Error</h1>
                         :
                             (
-                                fieldsOfStudy.map(field => (
+                                fieldFiltered.map(field => (
                                     <div className="fieldstudy_card">
                                         <div className="imgbox">
                                             <img className="field_image w-full h-full object-cover" src={`http://127.0.0.1:8000${field.image}`} alt=""/>
