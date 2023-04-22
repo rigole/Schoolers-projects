@@ -13,6 +13,18 @@ function Universities() {
     const dispatch = useDispatch();
     const school_list = useSelector((state:any) => state.schoolList);
     const { schools, loading, error } = school_list;
+    const [input, setInput] = useState('');
+
+    const [schoolsFiltered, setSchoolsFiltered] = useState(schools)
+
+    const filteredSchools = async (input) => {
+        const filtered =  schools.filter(field => {
+            return field.name.toLowerCase().includes(input.toLowerCase())
+        })
+        setInput(input);
+        setSchoolsFiltered(filtered);
+    }
+    console.log(schoolsFiltered)
 
     
 
@@ -27,7 +39,7 @@ function Universities() {
             </div>
             <div className="text-center" >
                 <form className="px-0 py-0">
-                    <input className="nosubmit w-1/2 h-9 rounded-xl" type="search" placeholder="Search University" required/>
+                    <input  value={input} onChange={(e) => filteredSchools(e.target.value)} className="nosubmit w-1/2 h-9 rounded-xl" type="search" placeholder="Search University" required/>
                 </form>
             </div>
 
@@ -50,7 +62,8 @@ function Universities() {
                         </label>
                     </span>
                     <span className="px-8">
-                        <label htmlFor="">admission on competition
+                        <label htmlFor="">admi
+                        ssion on competition
                             <input className="ml-1" type="checkbox"/>
                         </label>
                     </span>
@@ -59,8 +72,8 @@ function Universities() {
             <div className="school_list">
                 { loading ? <Loader/>
                     : error ? <h1>Error</h1>
-                        :
-                        schools.map(school => (
+                        : 
+                        schoolsFiltered.map(school => (
                             <div className="relative university_single_card  shadow-[0_30px_30px_0_rgba(0,0,0,0.5)] rounded-2xl my-9 ml-4">
                                 <div className="h-[40%] w-full">
                                     <img src={OrientationImage} className="rounded-t-2xl" alt="" />

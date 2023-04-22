@@ -58,7 +58,7 @@ const FieldStudy = () => {
                                             <p className="fieldstudy_description text-black">
                                                 {field.description}
                                             </p>
-                                            <Link to="/fields:id/" className="readmore_field flex justify-center rounded-md bg-transparent text-white  hover:text-white transition-all">
+                                            <Link to={`fields/${field.field_id}`} className="readmore_field flex justify-center rounded-md bg-transparent text-white  hover:text-white transition-all">
                                                 <button className=" rounded-full  py-2 px-14 border-1 bg-amber-500 hover:bg-amber-300">Read more</button>
                                             </Link>
                                         </div>
