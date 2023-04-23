@@ -18,8 +18,8 @@ function Universities() {
     const [schoolsFiltered, setSchoolsFiltered] = useState(schools)
 
     const filteredSchools = async (input) => {
-        const filtered =  schools.filter(field => {
-            return field.name.toLowerCase().includes(input.toLowerCase())
+        const filtered =  schools.filter(school => {
+            return school.name.toLowerCase().includes(input.toLowerCase())
         })
         setInput(input);
         setSchoolsFiltered(filtered);
