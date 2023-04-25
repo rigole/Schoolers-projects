@@ -65,6 +65,11 @@ function SignIn(){
                     </div>
                     <div className="field">
                       <a className="ssolink" href="#"></a>
+                      <p>
+                        <a href="#">
+                            <i className="fab fa-google "></i>Sign in with Google
+                        </a>
+                      </p>
                     </div>
                   </form>
                 </div>

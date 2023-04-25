@@ -408,15 +408,7 @@ span {
 label {
   margin-bottom: 10px;
 }
-.reset-pass a,label {
-  font-size: 14px;
-  font-weight: 600;
-  display: block;
-}
-.reset-pass > a {
-  text-align: right;
-  margin-bottom: 10px;
-}
+
 .grid--50-50 {
   display: grid;
   grid-template-columns: 50% 50%;
