@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom"
 import useModal from "../components/Modal/useModal";
 import Modal from "../components/Modal/modal";
+import SignIn from "../Pages/SignIn";
 
 const Header = () => {
 
@@ -100,9 +101,7 @@ const Header = () => {
                             </ul>
                         </div>
                         <Modal isOpen={isOpen} toggle={toggle}>
-                            <div>
-                                This is our Modal
-                            </div>
+                            <SignIn/>
                         </Modal>
 
                                 
