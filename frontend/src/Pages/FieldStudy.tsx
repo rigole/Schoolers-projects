@@ -14,7 +14,7 @@ const FieldStudy = () => {
     const { fieldsOfStudy, loading, error } = field_of_study;
     const [input, setInput] = useState('');
 
-    const [fieldFiltered, setfieldFiltered] = useState<any>([fieldsOfStudy])
+    const [fieldFiltered, setfieldFiltered] = useState(fieldsOfStudy)
 
     const filteredFieldStudy = async (input) => {
         const filtered = fieldsOfStudy.filter(field => {

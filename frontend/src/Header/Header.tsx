@@ -1,10 +1,14 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom"
+import useModal from "../components/Modal/useModal";
+import Modal from "../components/Modal/modal";
+import SignIn from "../Pages/SignIn";
 
 const Header = () => {
 
     const [isActive, setIsActive] = useState<boolean>(false);
     const [menuDisplay, setMenuDisplay] = useState<boolean>(false);
+    const { isOpen, toggle } = useModal();
 
     const changeIcon = () => {
         setIsActive(current => !current);
@@ -27,6 +31,16 @@ const Header = () => {
 
 
     }
+
+    /*function ModalComponent(){
+        const { isOpen, toggle } = useModal();
+    
+        return (
+           
+        )
+    }*/
+    
+
 
 
     return (
@@ -63,7 +77,7 @@ const Header = () => {
                         </Link>
                         <div className="rounded-full py-2 px-4 border-1 bg-amber-500 hover:bg-amber-300">
                             <Link className="space-x-5  rounded-md bg-transparent text-white  hover:text-white transition-all" to="">
-                                <button>Sign In</button>
+                                <button onClick={toggle}>Sign In</button>
                             </Link>
                         </div>
                     </ul>
@@ -86,8 +100,11 @@ const Header = () => {
                                 <li className="w-1/2 px-1"><Link to="" className="block  px-1 py-7  hover:bg-green-500 transition duration-300">FR</Link></li>
                             </ul>
                         </div>
+                        <Modal isOpen={isOpen} toggle={toggle}>
+                            <SignIn/>
+                        </Modal>
 
-
+                                
 
 
 
