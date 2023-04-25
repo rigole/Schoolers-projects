@@ -280,7 +280,6 @@ div .like_university {
 /* Modal Style */
 
 .modal-overlay {
-
   z-index: 9999;
   width: 100vw;
   height: 100vh;
@@ -294,7 +293,7 @@ div .like_university {
 
 .modal-box {
   display: block;
-  background: white;
+  /*background: white;*/
   width: 70%;
   height: 70%;
   padding: 1rem;
@@ -309,6 +308,7 @@ div .like_university {
   min-height: 100vh;
   overflow: hidden;
 }
+/*
 .loginbackground {
   min-height: 692px;
   position: fixed;
@@ -318,7 +318,7 @@ div .like_university {
   top: 0;
   z-index: 0;
   overflow: hidden;
-}
+}*/
 .flex-flex {
   display: flex;
 }
@@ -364,16 +364,17 @@ background-color: #ffffff;
 }
 .box-background--cyan200 {
   background-color: #7fd3ed;
-}
+}/*
 .padding-top--64 {
 padding-top: 64px;
-}
+}*/
 .padding-top--24 {
 padding-top: 24px;
 }
+/*
 .padding-top--48 {
 padding-top: 48px;
-}
+}*/
 .padding-bottom--24 {
 padding-bottom: 24px;
 }
@@ -430,7 +431,7 @@ label {
   min-height: 44px;
   border: unset;
   border-radius: 4px;
-  outline-color: rgb(84 105 212 / 0.5);
+  outline-color: #F59E0B;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
               rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
@@ -476,7 +477,7 @@ a.ssolink {
   text-align: center;
 }
 .listing a {
-  color: #697386;
+  
   font-weight: 600;
   margin: 0 10px;
 }

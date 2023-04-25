@@ -1,12 +1,12 @@
-
+import Button from "../components/Button/Button";
 
 function SignIn(){
 
     return(
         
         <div className="login-root">
-        <div className="box-root flex-flex flex-direction--column" style={{ minHeight: '100vh', flexGrow: '1'}}>
-          <div className="loginbackground box-background--white padding-top--64">
+        <div className="box-root flex-flex flex-direction--column" style={{ minHeight: '90vh', flexGrow: '1'}}>
+          <div className="loginbackground">
             <div className="loginbackground-gridContainer">
               <div className="box-root flex-flex" style={{ gridArea: 'top / start / 8/ end' }}>
                 <div className="box-root" style={{ backgroundImage: 'linear-gradient(white 0%, rgb(247, 250, 252) 33%)', flexGrow: '1' }}>
@@ -37,13 +37,11 @@ function SignIn(){
                 <div className="box-root box-divider--light-all-2 animationRightLeft tans3s" style={{ flexGrow: '1'}}></div>
               </div>
             </div>
-          </div>flex-grow: 1; z-index: 9;
+          </div>
           <div className="box-root padding-top--24 flex-flex flex-direction--column" style={{ flexGrow : '1', zIndex: '9' }}>
-            <div className="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
-              <h1><a href="http://blog.stackfindover.com/" rel="dofollow">Stackfindover</a></h1>
-            </div>
             <div className="formbg-outer">
               <div className="formbg">
+                <div className="text-center text-red">Schoolers logo</div>
                 <div className="formbg-inner padding-horizontal--48">
                   <span className="padding-bottom--15">Sign in to your account</span>
                   <form id="stripe-login">
@@ -54,32 +52,21 @@ function SignIn(){
                     <div className="field padding-bottom--24">
                       <div className="grid--50-50">
                         <label htmlFor="password">Password</label>
-                        <div className="reset-pass">
-                          <a href="#">Forgot your password?</a>
-                        </div>
                       </div>
                       <input type="password" name="password"/>
                     </div>
                     <div className="field field-checkbox padding-bottom--24 flex-flex align-center">
                       <label htmlFor="checkbox">
-                        <input type="checkbox" name="checkbox"/> Stay signed in for a week
+                      <a href="#">Forgot your password?</a>
                       </label>
                     </div>
-                    <div className="field padding-bottom--24">
-                      <input type="submit" name="submit" value="Continue"/>
+                    <div className="field padding-bottom--24 text-white w-[345px] text-center">
+                     <Button text="Sign In " paddingX={14} paddingY={2} marginTop={4} />
                     </div>
                     <div className="field">
-                      <a className="ssolink" href="#">Use single sign-on (Google) instead</a>
+                      <a className="ssolink" href="#"></a>
                     </div>
                   </form>
-                </div>
-              </div>
-              <div className="footer-link padding-top--24">
-                <span>Don't have an account? <a href="">Sign up</a></span>
-                <div className="listing padding-top--24 padding-bottom--24 flex-flex center-center">
-                  <span><a href="#">© Stackfindover</a></span>
-                  <span><a href="#">Contact</a></span>
-                  <span><a href="#">Privacy & terms</a></span>
                 </div>
               </div>
             </div>
