@@ -4,6 +4,14 @@ from rest_framework.response import Response
 from schools.serializers import SchoolSerialiser, StudyFieldSerializer, ProgramSerializer
 from rest_framework import status
 from rest_framework.decorators import api_view
+from django.contrib.auth.models import User
+
+from django.contrib.auth.hashers import make_password
+from rest_framework import status
+
+
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+from rest_framework_simplejwt.views import TokenObtainPairView
 
 # Create your views here.
 
@@ -42,3 +50,7 @@ def getAllPrograms(request):
 
 
 
+class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
+    def validate(self, attrs):
+        data = super().validate(attrs)
+        serializer = User
