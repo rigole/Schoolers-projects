@@ -23,5 +23,5 @@ export const USER_LIST_SUCCESS = 'USER_LIST_SUCCESS'
 export const USER_LIST_FAIL = 'USER_LIST_FAIL'
 export const USER_LIST_RESET = 'USER_LIST_RESET'
 
-
+export const USER_LOGOUT = 'USER_LOGOUT'
 
