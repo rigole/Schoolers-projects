@@ -502,6 +502,24 @@ a.ssolink {
 
 /*End Error Boundary style*/
 
+/* Sign up Page */
+
+.signUpElements{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;  
+  height: 90vh;
+}
+
+.signUpForm{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+/* end  Sign up Page */
+
 @media screen and (max-width: 375px){
   .tab{
     display: flex;
