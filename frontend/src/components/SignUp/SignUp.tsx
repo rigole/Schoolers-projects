@@ -1,20 +1,12 @@
-import { Link } from "react-router-dom";
-import Button from "../components/Button/Button";
+import { Link } from "react-router-dom"
+import Button from "../Button/Button"
 
-function SignIn(){
 
-    return(
-        
-        <div className="login-root">
-        <div className="box-root flex-flex flex-direction--column" style={{ minHeight: '90vh', flexGrow: '1'}}>
-         
-          
-            <div className="formbg-outer">
-              <div className="formbg">
-                <div className="text-center text-red">Schoolers logo</div>
-                <div className="formbg-inner padding-horizontal--48">
-                  <span className="padding-bottom--15">Sign in to your account</span>
-                  <form id="stripe-login">
+function SignUp () {
+
+    return (
+        <div>
+             <form id="stripe-login">
                     <div className="field padding-bottom--24">
                       <label htmlFor="email">Email</label>
                       <input type="email" name="email"/>
@@ -38,18 +30,12 @@ function SignIn(){
                       <p>
                         <a href="#">
                             <i className="fab fa-google "></i>Sign in with Google
-                           
                         </a>
                       </p>
                     </div>
                   </form>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
+        </div>
     )
 }
 
-export default SignIn
-    
+export default SignUp
