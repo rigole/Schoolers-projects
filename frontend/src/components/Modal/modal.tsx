@@ -14,6 +14,7 @@ function Modal(props: ModalType){
                 <div className="modal-overlay" onClick={props.toggle}>
                     <div onClick={(e) => e.stopPropagation()} className="modal-box">
                         {props.children}
+                            <i onClick={props.toggle} className="closing-modal-icon fab fa-x "></i>
                     </div>
                 </div>
             )

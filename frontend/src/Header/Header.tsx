@@ -32,13 +32,9 @@ const Header = () => {
 
     }
 
-    /*function ModalComponent(){
+    function ModalComponent(){
         const { isOpen, toggle } = useModal();
-    
-        return (
-           
-        )
-    }*/
+    }
     
 
 

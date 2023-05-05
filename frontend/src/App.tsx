@@ -9,6 +9,7 @@ import Universities from './Pages/Universities';
 import SchoolDetails from './components/SchoolDetails/SchoolDetails';
 import Programs from './Pages/Programs';
 import FieldStudy from './Pages/FieldStudy';
+import SignUp from './components/SignUp/SignUp';
 import FallbackRender from './components/Error-Boundary/Error';
 
 
@@ -23,6 +24,7 @@ function App() {
             <Route path='/programs' element={<Programs/>}/>
             <Route path='/universities/:school_id' element={<SchoolDetails/>}/>
             <Route path='/fields' element={<FieldStudy/>}/>
+            <Route path='/signup' element={<SignUp/>}/>
             <Route path='*' element={<FallbackRender/>}/>
         </Routes>
         <Footer/>
