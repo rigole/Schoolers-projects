@@ -14,7 +14,7 @@ import {
 } from "../constants/userConstant"
 
 
-export const register = (name, email, password) => async (dispatch) => {
+export const register = (name:any, email:any, password:any) => async (dispatch:any) => {
 
     try{
         dispatch({
@@ -23,12 +23,24 @@ export const register = (name, email, password) => async (dispatch) => {
 
         const config = {
             headers: {
-                'Content-type': 'application/json'
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            
             }
         }
 
-        const { data } = await axios.post('/api/users/signup/',
-        {'name': name, 'email': email, 'password': password}, config)
+        const { data } = await axios.post
+        (
+            'http://127.0.0.1:8000/api/users/signup/',
+
+            {
+                'username': name, 
+                'email': email, 
+                'password': password
+            }, 
+            
+            config
+        )
 
         dispatch({
             type: USER_REGISTER_SUCCESS,
@@ -59,7 +71,7 @@ export const signIn = (email, password) => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.post('/api/users/login/',
+        const { data } = await axios.post('http://127.0.0.1:8000/api/users/login/',
             {'username': email, 'password': password}, config)
         
             dispatch({

@@ -33,6 +33,7 @@ export const schoolList = () => async (dispatch: any) => {
     }
 }
 
+
 export const schoolDetails = (school_id:any) => async (dispatch:any) => {
     try {
         dispatch({ type: SCHOOL_DETAILS_REQUEST })

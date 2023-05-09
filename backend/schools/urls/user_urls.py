@@ -1,11 +1,11 @@
 from django.urls import path
-from schools.views import views
+from schools import views
 
 
 urlpatterns = [
     path('login/', views.MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
     
-    path('signup/', views.registerUser, name="register"),
+    path('signup/', views.registerUser, name="signup"),
     
     path('profile/', views.getUserProfile, name="users-profile"),
     

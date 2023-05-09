@@ -1,9 +1,41 @@
-import { Link } from "react-router-dom"
-import Button from "../Button/Button"
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import Button from "../Button/Button";
+import { register, signIn } from "../../actions/userActions";
 import OrientationImage from "../../images/orientation.jpg";
 
 
+
 function SignUp () {
+  const location = useLocation()
+  const navigate =  useNavigate()
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  const dispatch = useDispatch()
+
+  const redirect = location.search ? location.search.split('=')[1] : '/'
+
+  
+    const userRegisters = useSelector((state: any) => state.userRegister)
+
+  const {error, loading, userInfo} = userRegisters
+
+  useEffect(() => {
+    if(userInfo){
+      navigate('/')
+    }
+  },[navigate, userInfo, redirect])
+
+
+  const submitHandler = (e:any) => {
+    e.preventDefault()
+    console.log(userInfo)
+    dispatch<any>(register(name, email, password))
+  }
+
 
     return (
         <section className="signUpSection pt-20">
@@ -13,14 +45,41 @@ function SignUp () {
               <img  src={OrientationImage} alt="" className="w-[350px] h-[350px] rounded-full items-center text-center py-4"/>
             </div>
             <div>
-              <form className="signUpForm" action="">
-                <label htmlFor="">Name</label>
-                <input type="text" className="w-[450px] h-[50px] border-solid border-2 rounded-full py-3" required />
-                <label htmlFor="">Email</label>
-                <input type="email"  className="w-[450px] h-[50px] border-solid border-2 rounded-full" required />
-                <label htmlFor="">Password</label>
-                <input type="password"  className="w-[450px] h-[50px] border-solid border-2 rounded-full mb-2" required />
+              <form className="signUpForm" onSubmit={submitHandler}>
+               <label htmlFor=""></label>
+                <input 
+                  type="text" 
+                  placeholder="Enter your Name" 
+                  value={name}
+                  className="w-[450px] h-[50px] border-solid border-2 rounded-full py-3 px-3"
+                  onChange={(e) => setName(e.target.value)} 
+                  required 
+                />
+
+<label htmlFor=""></label>
+
+                <input 
+                  type="email" 
+                  placeholder="Enter your Email" 
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-[450px] h-[50px] border-solid border-2 rounded-full py-3 px-3" 
+                  required
+                />
+              <label htmlFor=""></label>
+                <input 
+                  type="password" 
+                  placeholder="Enter your Password"  
+                  className="w-[450px] h-[50px]  border-solid border-2 rounded-full mb-2 py-3 px-3" 
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required 
+                />
                 <Button marginTop={7} text="Sign Up" paddingX={14} paddingY={2} />
+                <p className="text-center py-3">OR </p>
+                <Link to="#"  className="text-center">
+                  <i className="fab fa-google px-1"></i>Sign in with Google
+                </Link>
               </form>
             </div>
           </div>

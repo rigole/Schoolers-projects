@@ -3,12 +3,15 @@ import { composeWithDevTools } from "redux-devtools-extension"
 import thunk from "redux-thunk"
 import { schoolReducers, schoolDetails } from "./reducers/schoolReducers";
 import { programReducers } from "./reducers/programReducers";
+import { userRegisterReducer } from "./reducers/userReducers";
 import { fieldOfStudyReducers } from "./reducers/fieldOfStudyReducers";
+
 const reducer = combineReducers({
     schoolList: schoolReducers,
     school_details: schoolDetails,
     programState: programReducers,
-    fieldOfStudyList: fieldOfStudyReducers
+    fieldOfStudyList: fieldOfStudyReducers,
+    userRegister: userRegisterReducer,
 })
 
 const middleware = [thunk]

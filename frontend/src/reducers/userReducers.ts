@@ -33,7 +33,7 @@ import {
 
 
 
-export const userRegisterReducer = (state = {}, action) => {
+export const userRegisterReducer = (state = {}, action:any) => {
      switch(action.type){
         case USER_REGISTER_REQUEST:
             return { loading: true }
