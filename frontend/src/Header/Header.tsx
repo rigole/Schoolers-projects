@@ -96,6 +96,7 @@ const Header = () => {
                                     </Link>
                                     <Link className="" to="">
                                         <li 
+                                        onClick={logoutHandler}
                                             className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all"
                                         >
                                             Sign out
@@ -116,7 +117,7 @@ const Header = () => {
                                
                             ):(
                                     
-                                <div className="rounded-full py-2 px-4 border-1 hover:bg-amber-300">
+                                <div  className="rounded-full py-2 px-4 border-1 hover:bg-amber-300">
                                     <Link className="space-x-5  rounded-md bg-transparent text-white  hover:text-white transition-all" to="">
                                         <button onClick={toggle}>Sign In</button>
                                     </Link>
