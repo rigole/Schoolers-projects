@@ -14,44 +14,47 @@ import {
 } from "../constants/userConstant"
 
 
-export const register = (name:any, email:any, password:any) => async (dispatch:any) => {
+export const  register = (username:any, email:any, password:any) => async (dispatch:any) => {
 
     try{
         dispatch({
             type: USER_REGISTER_REQUEST
         })
-
-        const config = {
+        /*const config = {
             headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            
+                'Content-Type': 'multipart/form-data',
             }
-        }
+        }*/
 
-        const { data } = await axios.post
-        (
-            'http://127.0.0.1:8000/api/users/signup/',
+        const { data } = await axios.post('http://127.0.0.1:8000/api/users/signup/',
 
             {
-                'username': name, 
+                'username': username, 
                 'email': email, 
                 'password': password
-            }, 
-            
-            config
+            },
+             {
+                headers: {
+                    'Content-Type': 'application/json',
+                     Accept: 'application/json',
+                }
+            }
+           
         )
 
         dispatch({
             type: USER_REGISTER_SUCCESS,
             payload: data
+            
         })
 
-        localStorage.setItem('userInfo', JSON.stringify(data))
+       
+        console.log(data);
+        localStorage.setItem('userInfo', JSON.stringify((data)));
     } catch(error:any){
         dispatch({
             type: USER_REGISTER_FAIL,
-            payload:error.response && error.response.data.USER_DETAILS_FAIL
+            payload:error.response && error.response.data.USER_REGISTER_FAIL
                 ? error.response.data.detail
                 : error.message
 
@@ -59,7 +62,7 @@ export const register = (name:any, email:any, password:any) => async (dispatch:a
     }
 }
 
-export const signIn = (email, password) => async (dispatch) => {
+export const signIn = (email:any, password:any) => async (dispatch:any) => {
     try {
         dispatch({
             type: USER_LOGIN_REQUEST
@@ -67,7 +70,7 @@ export const signIn = (email, password) => async (dispatch) => {
 
         const config = {
             headers: {
-                'COntent-type': 'application/json'
+                'Content-Type': 'application/json'
             }
         }
 
@@ -91,7 +94,7 @@ export const signIn = (email, password) => async (dispatch) => {
     }
 }
 
-export const logout = () => (dispatch) => {
+export const logout = () => (dispatch:any) => {
     localStorage.removeItem('userInfo')
     dispatch({ type: USER_LOGOUT })
 }

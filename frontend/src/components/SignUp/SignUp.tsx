@@ -10,31 +10,30 @@ import OrientationImage from "../../images/orientation.jpg";
 function SignUp () {
   const location = useLocation()
   const navigate =  useNavigate()
-  const [name, setName] = useState('')
+  const [username, setUserName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
   const dispatch = useDispatch()
 
   const redirect = location.search ? location.search.split('=')[1] : '/'
-
-  
-    const userRegisters = useSelector((state: any) => state.userRegister)
-
+  const userRegisters = useSelector((state: any) => state.userRegister)
   const {error, loading, userInfo} = userRegisters
 
-  useEffect(() => {
-    if(userInfo){
-      navigate('/')
-    }
-  },[navigate, userInfo, redirect])
 
 
   const submitHandler = (e:any) => {
     e.preventDefault()
     console.log(userInfo)
-    dispatch<any>(register(name, email, password))
+    dispatch<any>(register(username, email, password))
   }
+
+  
+  useEffect(() => {
+    if(userInfo){
+      navigate('/profile')
+    }
+  },[navigate, userInfo, redirect])
 
 
     return (
@@ -50,14 +49,12 @@ function SignUp () {
                 <input 
                   type="text" 
                   placeholder="Enter your Name" 
-                  value={name}
+                  value={username}
                   className="w-[450px] h-[50px] border-solid border-2 rounded-full py-3 px-3"
-                  onChange={(e) => setName(e.target.value)} 
+                  onChange={(e) => setUserName(e.target.value)} 
                   required 
                 />
-
-<label htmlFor=""></label>
-
+                <label htmlFor=""></label>
                 <input 
                   type="email" 
                   placeholder="Enter your Email" 
@@ -66,7 +63,7 @@ function SignUp () {
                   className="w-[450px] h-[50px] border-solid border-2 rounded-full py-3 px-3" 
                   required
                 />
-              <label htmlFor=""></label>
+                <label htmlFor=""></label>
                 <input 
                   type="password" 
                   placeholder="Enter your Password"  
@@ -83,8 +80,6 @@ function SignUp () {
               </form>
             </div>
           </div>
-        
-          
         </section>
     )
 }

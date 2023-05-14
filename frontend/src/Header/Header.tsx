@@ -3,12 +3,25 @@ import { Link } from "react-router-dom"
 import useModal from "../components/Modal/useModal";
 import Modal from "../components/Modal/modal";
 import SignIn from "../Pages/SignIn";
+import { useDispatch, useSelector } from "react-redux";
+import { logout } from "../actions/userActions";
 
 const Header = () => {
 
     const [isActive, setIsActive] = useState<boolean>(false);
     const [menuDisplay, setMenuDisplay] = useState<boolean>(false);
+    const registered = useSelector((state:any) => state.userRegister);
     const { isOpen, toggle } = useModal();
+    //const loggedUser = useSelector((state:any) => state.userSignIn);
+    const { userInfo } = registered
+
+    const dispatch = useDispatch()
+
+    //console.log(registeredUser);
+
+    const logoutHandler = () => {
+        dispatch<any>(logout())
+    }
 
     const changeIcon = () => {
         setIsActive(current => !current);
@@ -71,17 +84,52 @@ const Header = () => {
                                 fr
                             </li>
                         </Link>
-                        <div className="rounded-full py-2 px-4 border-1 bg-amber-500 hover:bg-amber-300">
-                            <Link className="space-x-5  rounded-md bg-transparent text-white  hover:text-white transition-all" to="">
-                                <button onClick={toggle}>Sign In</button>
-                            </Link>
-                        </div>
+                        { userInfo ?
+                            (
+                                <>
+                                     <Link className="" to="">
+                                        <li
+                                           className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all"
+                                        >
+                                            My Favourites
+                                        </li>
+                                    </Link>
+                                    <Link className="" to="">
+                                        <li 
+                                            className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all"
+                                        >
+                                            Sign out
+                                            
+                                        </li>
+                                    </Link>
+
+                                    <Link className="" to="">
+                                        <li 
+                                            className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all"
+                                        >
+                                          {userInfo.username}
+                                            
+                                        </li>
+                                    </Link>
+                                </>
+                                   
+                               
+                            ):(
+                                    
+                                <div className="rounded-full py-2 px-4 border-1 hover:bg-amber-300">
+                                    <Link className="space-x-5  rounded-md bg-transparent text-white  hover:text-white transition-all" to="">
+                                        <button onClick={toggle}>Sign In</button>
+                                    </Link>
+                                </div>   
+                            )
+                        }
+                       
                     </ul>
 
                     <button className="md:hidden mobile-menu-button flex flex-col" onClick={toggleOpen}>
-                            <i   className = { isActive ? `fa-solid fa-x w-16 h-6 text-white text-center items-center  justify-items-center rounded-full  border-1  ` : `fa-solid fa-bars w-16 h-6 text-white text-center rounded-full   border-1 `}>
+                        <i className = { isActive ? `fa-solid fa-x w-16 h-6 text-white text-center items-center  justify-items-center rounded-full  border-1  ` : `fa-solid fa-bars w-16 h-6 text-white text-center rounded-full   border-1 `}>
 
-                            </i>
+                        </i>
                     </button>
 
 

@@ -77,7 +77,7 @@ def registerUser(request):
         username = data['username']
     )
     user.save()
-    return Response(status=status.HTTP_200_OK)
+    return Response(data, status=status.HTTP_200_OK)
     #except:
 #        message = {'detail': "User with this status already exists"}
 #        return Response(message, status=status.HTTP_400_BAD_REQUEST)
