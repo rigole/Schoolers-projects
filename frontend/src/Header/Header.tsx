@@ -12,8 +12,10 @@ const Header = () => {
     const [menuDisplay, setMenuDisplay] = useState<boolean>(false);
     const registered = useSelector((state:any) => state.userRegister);
     const { isOpen, toggle } = useModal();
-    //const loggedUser = useSelector((state:any) => state.userSignIn);
+    const loggedUser = useSelector((state:any) => state.userSignIn);
     const { userInfo } = registered
+
+    const { signedUser}  =  loggedUser
 
     const dispatch = useDispatch()
 
@@ -84,7 +86,7 @@ const Header = () => {
                                 fr
                             </li>
                         </Link>
-                        { userInfo ?
+                        { userInfo || signedUser ?
                             (
                                 <>
                                      <Link className="" to="">

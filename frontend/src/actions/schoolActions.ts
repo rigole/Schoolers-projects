@@ -9,8 +9,20 @@ import {
     SCHOOL_DETAILS_REQUEST,
     SCHOOL_DETAILS_FAIL
 } from "../constants/schoolConstants";
+/*
+const [input, setInput] = useState('');
 
+const [schoolsFiltered, setSchoolsFiltered] = useState(schools)
 
+const filteredSchools = async (input) => {
+    const filtered =  schools.filter(school => {
+        return school.name.toLowerCase().inclpudes(input.toLowerCase())
+    })
+    setInput(input);
+    setSchoolsFiltered(filtered);
+}
+console.log(schoolsFiltered)
+*/
 export const schoolList = () => async (dispatch: any) => {
 
     try {

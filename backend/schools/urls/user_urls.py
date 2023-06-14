@@ -3,7 +3,7 @@ from schools import views
 
 
 urlpatterns = [
-    path('login/', views.MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('signin/', views.signInUser, name='signin'),
     
     path('signup/', views.registerUser, name="signup"),
     

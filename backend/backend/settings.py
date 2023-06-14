@@ -25,8 +25,20 @@ SECRET_KEY = 'django-insecure-lo&ghh4*_q_tw2#n3pu)g88_hfcm4@y&zrmw(1jz9v0ho_%a%o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    
+ALLOWED_HOSTS = ['*']
+""" 
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:8000',
+     'http://localhost:3000',
+     'http://127.0.0.1:8000/'
+]
+"""
+
+
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+     'http://localhost:8000',
+     
 ]
 
 from datetime import timedelta

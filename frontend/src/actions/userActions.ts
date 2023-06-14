@@ -20,11 +20,7 @@ export const  register = (username:any, email:any, password:any) => async (dispa
         dispatch({
             type: USER_REGISTER_REQUEST
         })
-        /*const config = {
-            headers: {
-                'Content-Type': 'multipart/form-data',
-            }
-        }*/
+        
 
         const { data } = await axios.post('http://127.0.0.1:8000/api/users/signup/',
 
@@ -48,9 +44,14 @@ export const  register = (username:any, email:any, password:any) => async (dispa
             
         })
 
+        const userInfos = {
+            username,
+            email
+        }
        
-        console.log(data);
-        localStorage.setItem('userInfo', JSON.stringify((data)));
+      
+
+        localStorage.setItem('userInfo', JSON.stringify((userInfos)));
     } catch(error:any){
         dispatch({
             type: USER_REGISTER_FAIL,
@@ -70,12 +71,13 @@ export const signIn = (email:any, password:any) => async (dispatch:any) => {
 
         const config = {
             headers: {
-                'Content-Type': 'application/json'
-            }
+                'Content-Type': 'application/json',
+                Accept: 'application/json',
+            },
         }
-
-        const { data } = await axios.post('http://127.0.0.1:8000/api/users/login/',
-            {'username': email, 'password': password}, config)
+        
+        const { data } = await axios.post('http://127.0.0.1:8000/api/users/signin/',
+            {'email': email, 'password': password} , config)
         
             dispatch({
                 type:USER_LOGIN_SUCCESS,
