@@ -32,14 +32,16 @@ CSRF_TRUSTED_ORIGINS = [
      'http://localhost:3000',
      'http://127.0.0.1:8000/'
 ]
-"""
-
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
      'http://localhost:8000',
      
 ]
+"""
+
+
+
 
 from datetime import timedelta
 
@@ -73,7 +75,7 @@ SIMPLE_JWT = {
         'SLIDING_TOKEN_REFRESH_EXP_CLAIM': 'refresh_exp',
         'SLIDING_TOKEN_LIFETIME': timedelta(minutes=5),
         'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
-}
+    }
 
 
 # Application definition
@@ -107,9 +109,9 @@ MIDDLEWARE = [
 
 
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
+    'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-    )
+    ]
 }
 
 ROOT_URLCONF = 'backend.urls'
@@ -186,7 +188,8 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT = 'static/images'
 
-CORS_ALLOW_ALL_ORIGINS=True
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

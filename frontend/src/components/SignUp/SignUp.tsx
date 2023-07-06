@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import Button from "../Button/Button";
-import { register, signIn } from "../../actions/userActions";
+import { register, signInAction } from "../../actions/userActions";
 import OrientationImage from "../../images/orientation.jpg";
 
 
@@ -49,6 +49,7 @@ function SignUp () {
                 <input 
                   type="text" 
                   placeholder="Enter your Name" 
+                  name="username"
                   value={username}
                   className="w-[450px] h-[50px] border-solid border-2 rounded-full py-3 px-3"
                   onChange={(e) => setUserName(e.target.value)} 
@@ -57,6 +58,7 @@ function SignUp () {
                 <label htmlFor=""></label>
                 <input 
                   type="email" 
+                  name="email"
                   placeholder="Enter your Email" 
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -69,6 +71,7 @@ function SignUp () {
                   placeholder="Enter your Password"  
                   className="w-[450px] h-[50px]  border-solid border-2 rounded-full mb-2 py-3 px-3" 
                   value={password}
+                  name="password"
                   onChange={(e) => setPassword(e.target.value)}
                   required 
                 />

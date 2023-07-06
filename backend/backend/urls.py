@@ -14,19 +14,22 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 
 from django.conf import Settings, settings
 from django.conf.urls.static import static
+from rest_framework_simplejwt import views as jwt_views
 
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/schools/', include('schools.urls.school_urls')),
-    path('api/fieldofstudy/', include('schools.urls.fields_of_study_urls')),
-    path('api/programs/', include('schools.urls.programs_urls')),
-    path('api/users/', include('schools.urls.user_urls')),
+    re_path('admin/', admin.site.urls),
+    re_path('api/schools/', include('schools.urls.school_urls')),
+    re_path('api/fieldofstudy/', include('schools.urls.fields_of_study_urls')),
+    re_path('api/programs/', include('schools.urls.programs_urls')),
+    re_path('token/', jwt_views.TokenObtainPairView.as_view(), name ='token_obtain_pair'),
+    re_path('token/refresh/', jwt_views.TokenRefreshView.as_view(), name ='token_refresh'),
+    re_path('api/users/', include('schools.urls.user_urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

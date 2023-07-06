@@ -12,6 +12,7 @@ import FieldStudy from './Pages/FieldStudy';
 import SignUp from './components/SignUp/SignUp';
 import Profile from './components/Profile/Profile';
 import FallbackRender from './components/Error-Boundary/Error';
+import SignIn from './Pages/SignIn';
 
 
 
@@ -27,6 +28,7 @@ function App() {
             <Route path='/fields' element={<FieldStudy/>}/>
             <Route path='/signup' element={<SignUp/>}/>
             <Route path='profile/' element={<Profile/>}/>
+            <Route path='/signin' element={<SignIn/>}/>
             <Route path='*' element={<FallbackRender/>}/>
         </Routes>
         <Footer/>

@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 import {
     USER_REGISTER_REQUEST,
     USER_REGISTER_FAIL,
@@ -20,6 +21,12 @@ export const  register = (username:any, email:any, password:any) => async (dispa
         dispatch({
             type: USER_REGISTER_REQUEST
         })
+        const config = {
+            headers: {
+
+                'Content-type': 'application/json'
+            }
+        }
         
 
         const { data } = await axios.post('http://127.0.0.1:8000/api/users/signup/',
@@ -28,15 +35,7 @@ export const  register = (username:any, email:any, password:any) => async (dispa
                 'username': username, 
                 'email': email, 
                 'password': password
-            },
-             {
-                headers: {
-                    'Content-Type': 'application/json',
-                     Accept: 'application/json',
-                }
-            }
-           
-        )
+            },config)
 
         dispatch({
             type: USER_REGISTER_SUCCESS,
@@ -44,14 +43,7 @@ export const  register = (username:any, email:any, password:any) => async (dispa
             
         })
 
-        const userInfos = {
-            username,
-            email
-        }
-       
-      
-
-        localStorage.setItem('userInfo', JSON.stringify((userInfos)));
+        localStorage.setItem('userInfo', JSON.stringify(data));
     } catch(error:any){
         dispatch({
             type: USER_REGISTER_FAIL,
@@ -63,7 +55,8 @@ export const  register = (username:any, email:any, password:any) => async (dispa
     }
 }
 
-export const signIn = (email:any, password:any) => async (dispatch:any) => {
+export const signInAction = (email:any, password:any) => async (dispatch:any) => {
+   
     try {
         dispatch({
             type: USER_LOGIN_REQUEST
@@ -71,13 +64,13 @@ export const signIn = (email:any, password:any) => async (dispatch:any) => {
 
         const config = {
             headers: {
-                'Content-Type': 'application/json',
-                Accept: 'application/json',
+                'Content-Type': 'application/json',      
             },
+            
         }
         
         const { data } = await axios.post('http://127.0.0.1:8000/api/users/signin/',
-            {'email': email, 'password': password} , config)
+            {'username': email, 'password': password}, config)
         
             dispatch({
                 type:USER_LOGIN_SUCCESS,
@@ -92,6 +85,7 @@ export const signIn = (email:any, password:any) => async (dispatch:any) => {
                 ? error.response.data.detail
                 : error.message
         })
+        
        
     }
 }

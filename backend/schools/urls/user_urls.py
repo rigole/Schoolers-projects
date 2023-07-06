@@ -1,15 +1,15 @@
 from django.urls import path
-from schools import views
+from schools.views import registerUser, MyTokenObtainPairView, getUserProfile, getUsers, updateUserProfile
 
 
 urlpatterns = [
-    path('signin/', views.signInUser, name='signin'),
+    path('signin/', MyTokenObtainPairView.as_view(), name='signin'),
     
-    path('signup/', views.registerUser, name="signup"),
+    path('signup/', registerUser, name="signup"),
     
-    path('profile/', views.getUserProfile, name="users-profile"),
+    path('profile/', getUserProfile, name="users-profile"),
     
-    path('profile/update/', views.updateUserProfile, name="user-profile-update"),
+    path('profile/update/', updateUserProfile, name="user-profile-update"),
     
-    path('', views.getUsers, name="users-profile"),
+    path('', getUsers, name="users-profile"),
 ]

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
 import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { signIn } from "../actions/userActions";
+import { signInAction } from "../actions/userActions";
 import Button from "../components/Button/Button";
 
 
@@ -16,24 +16,21 @@ function SignIn(){
   const [password, setPassword] = useState('')
   const userLogin = useSelector((state:any) => state.userSignIn)
 
-  const {error, loading, signedUser} = userLogin
+  const {error, loading, userInfo} = userLogin
   const redirect = location.search ? location.search.split('=')[1] : '/'
 
   useEffect(() => {
-    if(signedUser){
+    if(userInfo){
       navigate("/profile")
     }
-  },[navigate,signedUser, redirect])
+  },[navigate,userInfo, redirect])
 
   const submitHandler = (e:any) => {
     e.preventDefault()
-    dispatch<any>(signIn(email, password))
+    dispatch<any>(signInAction(email, password))
     console.log(email)
     console.log(password)
   }
-
-
-
 
     return(
         
@@ -50,7 +47,8 @@ function SignIn(){
                     <div className="field padding-bottom--24">
                       <label htmlFor="email">Email</label>
                       <input 
-                        type="text" 
+                        type="text"
+                        required
                         name="email"
                         onChange={(e) => setEmail(e.target.value)}
                       />
@@ -60,6 +58,7 @@ function SignIn(){
                         <label htmlFor="password">Password</label>
                       </div>
                       <input 
+                        required
                         type="password" 
                         name="password"
                         onChange={(e) => setPassword(e.target.value)}
