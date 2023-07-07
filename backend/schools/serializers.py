@@ -4,47 +4,47 @@ from .models import School, Category, StudyField, Program, EntranceExamination
 from django.contrib.auth.models import User
 from rest_framework_simplejwt.tokens import RefreshToken
 
+#from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+
 
 
 
 class UserSerializer(serializers.ModelSerializer):
-    name = serializers.SerializerMethodField(read_only=True)
-    user_id = serializers.SerializerMethodField(read_only= True)
-    isAdmin = serializers.SerializerMethodField(read_only=True)
     
     class Meta:
         model = User
-        fields = ['id', 'user_id', 'username', 'email', 'name', 'isAdmin']
-        
-    def get_name(self, obj):
-        name = obj.first_name
-        if name == '':
-            name = obj.email
-                
-        return name
-    
-    def get_userId(self, obj):
-        return obj.id
-    
-    
-    def get_isAdmin(self, obj):
-        return obj.is_staff
+        fields = ['id', 'username', 'email', 'is_staff']
         
         
-        
+         
 class UserSerializerWithToken(UserSerializer):
     token = serializers.SerializerMethodField(read_only=True)
     class Meta:
         model = User
-        fields = ['id', 'user_id', 'username', 'email', 'name', 'isAdmin', 'token']
+        fields = ['id','username', 'email', 'is_staff', 'token']
         
     
     def get_token(self, obj):
         token = RefreshToken.for_user(obj)
         return str(token.access_token)
     
+    
+ 
+ 
+"""
+    
+class LoginSerializer(TokenObtainPairSerializer):
+    
+    def validate(self, attrs):
+        data = super().validate(attrs)
         
+        refresh = self.get_token()
+        data['user'] = UserSerializer(self.user).data
+        data['access'] = str(refresh.token)       
         
+        return data
+        
+"""         
 
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
@@ -75,3 +75,5 @@ class EntranceExaminationSerializer(serializers.ModelSerializer):
     class Meta:
         model = EntranceExamination
         fields = '__all__'
+        
+        

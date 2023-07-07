@@ -33,7 +33,8 @@ import {
 
 
 
-export const userRegisterReducer = (state = {}, action) => {
+export const userRegisterReducer = (state = {}, action: any) => {
+
      switch(action.type){
         case USER_REGISTER_REQUEST:
             return { loading: true }
@@ -41,17 +42,20 @@ export const userRegisterReducer = (state = {}, action) => {
         case USER_REGISTER_SUCCESS:
             return { loading: false, userInfo: action.payload }
 
+        case USER_REGISTER_FAIL: 
+            return {  loading: false, error: action.payload }
+
         case USER_LOGOUT:
             return {}
 
         default:
             return state
-     }
+    }
 }
 
 
 
-export const userLoginReducer = (state = {}, action) => {
+export const userLoginReducer = (state = {}, action:any) => {
     switch(action.type) {
         case USER_LOGIN_REQUEST:
             return { loading: true }

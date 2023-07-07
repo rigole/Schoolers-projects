@@ -1,6 +1,8 @@
-from django.shortcuts import render
+import random
+from django.shortcuts import redirect, render
 from schools.models import School, StudyField, Program
 from rest_framework.response import Response
+from rest_framework_simplejwt.exceptions import TokenError, InvalidToken
 from schools.serializers import SchoolSerialiser, StudyFieldSerializer, ProgramSerializer, UserSerializer,UserSerializerWithToken
 
 from rest_framework import status
@@ -8,12 +10,18 @@ from rest_framework.decorators import api_view, permission_classes
 from django.contrib.auth.models import User
 
 from django.contrib.auth.hashers import make_password
-from rest_framework import status
+from rest_framework.viewsets import ModelViewSet
+
+from rest_framework.permissions import AllowAny
 
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
 
-from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
+
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+
+
+
 
 # Create your views here.
 
@@ -56,52 +64,56 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     def validate(self, attrs):
         data = super().validate(attrs)
         serializer = UserSerializerWithToken(self.user).data
-        for key, value in serializer.items():
-            data[key] = value
-        return data
+        for keys, values in serializer.items():
+            data[keys] = values
+        return data   
     
+
+
 
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer
     
-    
-    
+ 
 #View to register user
 @api_view(['POST'])
 def registerUser(request):
     data = request.data
     try:
         user = User.objects.create(
-            first_name = data['name'],
-            username = data['email'],
+            username = data['username'],
+            email = data['email'],
             password = make_password(data['password'])
         )
+        
         serializer = UserSerializerWithToken(user, many=False)
-        return Response(serializer.data)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
     except:
-        message = {'detail': "User with this status already exists"}
+        message = {'detail': "User with this email address already exists"}
         return Response(message, status=status.HTTP_400_BAD_REQUEST)
-        
-        
-#view to update user profile
-@api_view(['PUT'])
-@permission_classes([IsAuthenticated])
-def updateUserProfile(request):
-    user = request.user
-    serializer = UserSerializer(user, many=False)
     
-    data = request.data
+
     
-    user.first_name = data['name']
-    user.username = data['email']
-    if data['password'] != '':
-        user.password = make_password(data['password'])
+    
+
+""" 
+
+class signInUser(ModelViewSet, TokenObtainPairView):
+    serializer_class = LoginSerializer
+    permission_classes = (AllowAny,)
+    http_method_names = ['post']
+    
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
         
-        
-    user.save()
-    
-    return Response(serializer.data)
-    
+        try:
+            serializer.is_valid(raise_exception=True)
+        except TokenError as e:
+            raise InvalidToken(e.args[0])
+            
+        return Response(serializer.validated_data, status=status.HTTP_200_OK)
+"""
+
     
     
 
@@ -121,4 +133,23 @@ def getUsers(request):
     serializer = UserSerializer(users, many=True)
     return Response(serializer.data)
     
+
+
+#view to update user profile
+@api_view(['PUT'])
+@permission_classes([IsAuthenticated])
+def updateUserProfile(request):
+    user = request.user
+    serializer = UserSerializer(user, many=False)
     
+    data = request.data
+    
+    user.first_name = data['name']
+    user.username = data['email']
+    if data['password'] != '':
+        user.password = make_password(data['password'])
+        
+        
+    user.save()
+    
+    return Response(serializer.data)

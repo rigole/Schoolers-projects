@@ -26,6 +26,12 @@ body {
 }
 
 
+
+.formbg-outer{
+  margin-top: 15rem;
+}
+
+
 /* programs Style */
 
 .programs_card_group {
@@ -526,6 +532,14 @@ a.ssolink {
     flex-direction: column;
    
   }
+
+  /*Sign up*/
+    .signUpElements{
+      display: flex;
+      flex-direction: column;
+    }
+  /*Sign up*/
+
 
  /* .tabulation {
     margin-bottom: 25rem;
