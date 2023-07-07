@@ -77,7 +77,6 @@ function SignIn(){
                       <p>
                         <a href="#">
                             <i className="fab fa-google "></i>Sign in with Google
-                           
                         </a>
                       </p>
                     </div>

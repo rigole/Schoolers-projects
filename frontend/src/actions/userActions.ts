@@ -23,7 +23,6 @@ export const  register = (username:any, email:any, password:any) => async (dispa
         })
         const config = {
             headers: {
-
                 'Content-type': 'application/json'
             }
         }
