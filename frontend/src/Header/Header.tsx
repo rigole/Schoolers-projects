@@ -16,6 +16,8 @@ const Header = () => {
 
     const { userInfo }  =  loggedUser
 
+    const { userRegistered } = registered
+
     const dispatch = useDispatch()
 
     //console.log(registeredUser);
@@ -85,7 +87,38 @@ const Header = () => {
                                 fr
                             </li>
                         </Link>
-                        { userInfo  ?
+                        { userRegistered ?
+                        (
+                            <>
+                            <Link className="" to="">
+                               <li
+                                  className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all"
+                               >
+                                   My Favourites
+                               </li>
+                           </Link>
+                           <Link className="" to="">
+                               <li 
+                               onClick={logoutHandler}
+                                   className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all"
+                               >
+                                   Sign out
+                                   
+                               </li>
+                           </Link>
+
+                           <Link className="" to="">
+                               <li 
+                                   className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all"
+                               >
+                                 {userRegistered.username}
+                                   
+                               </li>
+                           </Link>
+                            </>
+                        ) :
+
+                        userInfo  ?
                             (
                                 <>
                                      <Link className="" to="">

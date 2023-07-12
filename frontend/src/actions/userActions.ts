@@ -42,7 +42,7 @@ export const  register = (username:any, email:any, password:any) => async (dispa
             
         })
 
-        localStorage.setItem('userInfo', JSON.stringify(data));
+        localStorage.setItem('userRegistered', JSON.stringify(data));
     } catch(error:any){
         dispatch({
             type: USER_REGISTER_FAIL,
@@ -91,5 +91,6 @@ export const signInAction = (email:any, password:any) => async (dispatch:any) =>
 
 export const logout = () => (dispatch:any) => {
     localStorage.removeItem('userInfo')
+    localStorage.removeItem('userRegistered')
     dispatch({ type: USER_LOGOUT })
 }

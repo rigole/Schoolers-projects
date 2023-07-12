@@ -18,22 +18,22 @@ function SignUp () {
 
   const redirect = location.search ? location.search.split('=')[1] : '/'
   const userRegisters = useSelector((state: any) => state.userRegister)
-  const {error, loading, userInfo} = userRegisters
+  const {error, loading, userRegistered} = userRegisters
 
 
 
   const submitHandler = (e:any) => {
     e.preventDefault()
-    console.log(userInfo)
+    console.log(userRegistered)
     dispatch<any>(register(username, email, password))
   }
 
   
   useEffect(() => {
-    if(userInfo){
+    if(userRegistered){
       navigate('/profile')
     }
-  },[navigate, userInfo, redirect])
+  },[navigate, userRegistered, redirect])
 
 
     return (
