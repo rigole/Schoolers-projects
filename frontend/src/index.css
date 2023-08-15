@@ -17,8 +17,21 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
   
 }
+
+.main_nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 50;
+  height: 50px;
+  align-items: center;
+}
+
+
 
 .university_single_card{
   /*margin: 5rem;*/
