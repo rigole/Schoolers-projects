@@ -36,23 +36,22 @@ function Universities() {
                 <div className="criteria flex">
                     <span className="px-8">
                         <label htmlFor="">IPES
-                            <input className="ml-1" type="checkbox"/>
+                            <input name="ipes" className="ml-1" type="checkbox"/>
                         </label>
                     </span>
                     <span className="px-8">
                         <label htmlFor="" >Universities
-                            <input className="ml-1" type="checkbox"/>
+                            <input name="universities" className="ml-1" type="checkbox"/>
                         </label>
                     </span>
                     <span className="px-8">
                         <label htmlFor="">files study admission
-                            <input className="ml-1" type="checkbox"/>
+                            <input name="file" className="ml-1" type="checkbox"/>
                         </label>
                     </span>
                     <span className="px-8">
-                        <label htmlFor="">admi
-                        ssion on competition
-                            <input className="ml-1" type="checkbox"/>
+                        <label htmlFor="">admission on competition
+                            <input name="admission" className="ml-1" type="checkbox"/>
                         </label>
                     </span>
                 </div>
@@ -79,7 +78,7 @@ function Universities() {
                                             <h1 className="text-center text-2xl font-bold mt-2">{school.name}</h1>
                     
                                             <div className="location">
-                                                <span> <i className="fa-sharp fa-solid fa-location-pin"></i>Douala</span>
+                                                <span> <i className="fa-sharp fa-solid fa-location-pin"></i>{school.location}</span>
                                                 <span><i className="fa-solid fa-school"></i> private</span>
                                             </div>
                                             <p className="text-center m-4">

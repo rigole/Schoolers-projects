@@ -16,6 +16,8 @@ const Header = () => {
 
     const { userInfo }  =  loggedUser
 
+    const { registeredUser  } = registered
+
     const dispatch = useDispatch()
 
     //console.log(registeredUser);
@@ -142,12 +144,12 @@ const Header = () => {
                                         Universities
                                     </li>
                                 </Link>
-                                <Link to="/programs"className="block px-1 py-7 hover:bg-green-500 transition duration-300">
+                                <Link to="/programs"className="block px-1 py-7 text-white hover:bg-green-500 transition duration-300">
                                     <li className="w-1/2 px-1">
                                         Programs
                                     </li>
                                 </Link>
-                                <Link to="/fields" className="block  px-1 py-7 hover:bg-green-500 transition duration-300">
+                                <Link to="/fields" className="block  px-1 py-7 text-white hover:bg-green-500 transition duration-300">
                                     <li className="w-1/2 px-1">
                                         Fields of study
                                     </li>
@@ -185,14 +187,51 @@ const Header = () => {
                                
                                  ):(
                                     
-                                <div  className="rounded-full py-2 px-4 border-1 hover:bg-amber-300">
-                                    <Link className="space-x-5  rounded-md bg-transparent text-white  hover:text-white transition-all" to="/signin">
+                                <Link to="/signin"  className="rounded-full text-white py-1 px-4 border-1 hover:bg-amber-300">
+                                    <li className="w-1/2 px-1" >
                                         Sign In
-                                    </Link>
-                                </div>   
+                                    </li>
+                                </Link>   
                                 )
                              }
-                                <Link to="/fr" className="block  px-1 py-7  hover:bg-green-500 transition duration-300">
+
+                              { registeredUser  ?
+                                (
+                                    <>
+                                        <Link className="" to="">
+                                            <li
+                                            className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all"
+                                            >
+                                                My Favourites
+                                            </li>
+                                        </Link>
+                                        <Link className="" to="">
+                                            <li 
+                                            onClick={logoutHandler}
+                                                className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all"
+                                            >
+                                                Sign out
+                                                
+                                            </li>
+                                        </Link>
+
+                                        <Link className="" to="">
+                                            <li 
+                                                className="py-2 px-4 rounded-md bg-transparent text-white hover:bg-amber-500 hover:text-white transition-all"
+                                            >
+                                            {userInfo.username}
+                                                
+                                            </li>
+                                        </Link>
+                                    </>
+                                    
+                               
+                                 ):(
+                                    
+                                  <></>
+                                )
+                             }
+                                <Link to="/fr" className="block  px-1 py-7 hover:bg-green-500 transition duration-300">
                                     <li className="w-1/2 px-1">
                                         FR
                                     </li>
