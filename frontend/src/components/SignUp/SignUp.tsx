@@ -18,22 +18,22 @@ function SignUp () {
 
   const redirect = location.search ? location.search.split('=')[1] : '/'
   const userRegisters = useSelector((state: any) => state.userRegister)
-  const {error, loading, userInfo} = userRegisters
+  const {error, loading, userRegistered} = userRegisters
 
 
 
   const submitHandler = (e:any) => {
     e.preventDefault()
-    console.log(userInfo)
+    console.log(userRegistered)
     dispatch<any>(register(username, email, password))
   }
 
   
   useEffect(() => {
-    if(userInfo){
+    if(userRegistered){
       navigate('/profile')
     }
-  },[navigate, userInfo, redirect])
+  },[navigate, userRegistered, redirect])
 
 
     return (
@@ -76,10 +76,13 @@ function SignUp () {
                   required 
                 />
                 <Button marginTop={7} text="Sign Up" paddingX={14} paddingY={2} />
-                <p className="text-center py-3">OR </p>
-                <Link to="#"  className="text-center">
-                  <i className="fab fa-google px-1"></i>Sign in with Google
-                </Link>
+                <p className="flex justify-center pt-2"> OR </p>
+                <p>
+                    <a href="#"  className="flex justify-center">
+                      <img width="48" height="48" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/>
+                      <span className="pt-2 px-2">Sign in with Google</span>
+                    </a>
+                </p>
               </form>
             </div>
           </div>

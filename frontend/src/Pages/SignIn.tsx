@@ -75,8 +75,9 @@ function SignIn(){
                     <div className="field">
                       <a className="ssolink" href="#"></a>
                       <p>
-                        <a href="#">
-                            <i className="fab fa-google "></i>Sign in with Google
+                        <a href="#"  className="flex justify-center">
+                          <img width="48" height="48" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/>
+                          <span className="pt-2 px-2">Sign in with Google</span>
                         </a>
                       </p>
                     </div>

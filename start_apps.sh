@@ -1,5 +1,5 @@
 cd /backend
 python manage.py runserver
 
-cd ../frontend
+cd ./frontend
 npm run start
