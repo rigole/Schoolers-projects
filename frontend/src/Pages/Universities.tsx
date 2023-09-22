@@ -14,14 +14,64 @@ function Universities() {
     const school_list = useSelector((state:any) => state.schoolList);
     const { schools, loading, error } = school_list;
     const [input, setInput] = useState("");
-    
+    let [locationFilter, setLocationFilter] = useState(new Set<string>());
 
+
+
+    let locationList : string[] = [];
+
+    schools.map((school) => {
+        if(!locationList.includes(school.location)){
+            locationList.push(school.location)
+        }
+    })
+                               
+    function updateFilters(checked, locationFilter){
+        if(checked){
+            setLocationFilter((prev) => new Set(prev).add(locationFilter))
+        }
+        if(!checked){
+            setLocationFilter((prev) => {
+                const next = new Set(prev)
+                next.delete(locationFilter);
+                return next;
+            })
+        }
+    }
+
+    const filteredLocationSchools = locationFilter.size === 0 
+    ? schools 
+    : schools.filter((p) => locationFilter.has(p.location))
+    /*
+    const [checked, setChecked] = useState<any>([]);
+    const [locationUniversities, setLocationUniversities] = useState<any>([]);
+
+    const privateUniversitiesList = (event) => {
+        if (event.target.checked) {
+            setLocationUniversities([...locationUniversities, event.target.value])
+        } else {
+            setLocationUniversities(
+                locationUniversities.filter((filtercheckbox) => filtercheckbox !== event.target.value )
+           ) 
+        }
+    }
+
+    */
+
+                             
+    console.log(locationList);
+    
+   
+     
+
+
+ 
     useEffect(() => {
-      dispatch<any>(schoolList())  
+      dispatch<any>(schoolList())
     }, [dispatch])
 
     return(
-        <section className=" pt-20">
+        <section className="pt-20">
             <div className="text-center pt-4">
                 <p className="text-4xl capitalize font-bold mb-4 font-comf">Search Universities</p>
             </div>
@@ -34,33 +84,21 @@ function Universities() {
             <div className="filters flex w-full py-4 justify-around px-4">
                 Filter
                 <div className="criteria flex">
-                    <span className="px-8">
-                        <label htmlFor="">IPES
-                            <input name="ipes" className="ml-1" type="checkbox"/>
-                        </label>
-                    </span>
-                    <span className="px-8">
-                        <label htmlFor="" >Universities
-                            <input name="universities" className="ml-1" type="checkbox"/>
-                        </label>
-                    </span>
-                    <span className="px-8">
-                        <label htmlFor="">files study admission
-                            <input name="file" className="ml-1" type="checkbox"/>
-                        </label>
-                    </span>
-                    <span className="px-8">
-                        <label htmlFor="">admission on competition
-                            <input name="admission" className="ml-1" type="checkbox"/>
-                        </label>
-                    </span>
+                    {locationList.map((location) =>(
+                        
+                          <span className="px-8">
+                          <label htmlFor="">{location}
+                              <input name="ipes" onChange={(e) => updateFilters(e.target.checked, location)} className="ml-1" type="checkbox"/>
+                          </label>
+                      </span>
+                    ))} 
                 </div>
             </div>
             <div className="school_list">
                 { loading ? <Loader/>
                     : error ? <h1>Error</h1>
                         : 
-                        schools.map(school =>{
+                        filteredLocationSchools.map(school =>{
                             if ( input == "" ||school.name.toLowerCase().includes(input.toLowerCase()) ) {
                                 return (
                                              
@@ -104,3 +142,4 @@ function Universities() {
 
 }
 export default Universities
+
