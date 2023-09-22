@@ -12,7 +12,36 @@ const Programs = () => {
 
     const { programs, loading, error } = programs_list;
 
-    console.log(programs)
+    let [durationFilter, setDurationFilter] = useState(new Set<string>());
+
+    let durationList : string[] = [];
+
+    programs.map((program) => {
+        if(!durationList.includes(program.duration)){
+            durationList.push(program.duration)
+        }
+    })
+
+    function updateFilters(checked, durationFilter){
+        if(checked){
+            setDurationFilter((prev) => new Set(prev).add(durationFilter))
+        }
+        if(!checked){
+            setDurationFilter((prev) => {
+                const next = new Set(prev)
+                next.delete(durationFilter);
+                return next;
+            })
+        }
+    }
+
+
+
+
+    const filteredDurationsPrograms = durationFilter.size === 0 
+    ? programs 
+    : programs.filter((p) => durationFilter.has(p.duration))
+    console.log(durationList)
 
     useEffect(() =>{
         dispatch<any>(programList())
@@ -29,13 +58,28 @@ const Programs = () => {
                 </form>
             </div>
 
+            
+            <div className="filters flex w-full py-4 justify-around px-4">
+                Duration
+                <div className="criteria flex">
+                    {durationList.map((duration) =>(
+                        
+                          <span className="px-8">
+                          <label htmlFor="">{duration} years
+                              <input name="duration" onChange={(e) => updateFilters(e.target.checked, duration)}  className="ml-1" type="checkbox"/>
+                          </label>
+                      </span>
+                    ))} 
+                </div>
+            </div>
+
             <div className="programs_card_group">
                 { loading ? <Loader/>
                     : error
                         ? <h1>Error</h1>
                     :
                         (
-                            programs.map(program => {
+                            filteredDurationsPrograms.map(program => {
                                 if(programInput == "" || program.name.toLowerCase().includes(programInput.toLowerCase()) ){
                                     return (
                                         <div className="program_card">
