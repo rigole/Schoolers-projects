@@ -1,29 +1,29 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <footer className="footer">
            <div className="part flex flex-col">
                 <h3 className="py-2">SCHOOLERS</h3>
-                <p>About</p>
-                <p>Terms</p>
-                <p>Privacy</p>
-                <p>Blog</p>
+                <Link to="/">About</Link>
+                <Link to="/">Terms</Link>
+                <Link to="/">Privacy</Link>
+                <Link to="/">Blog</Link>
            </div>
 
            <div className="part">
                 <h3 className="py-2">RESSOURCES</h3>
-                <p>Entrance examination</p>
-                <p>Scholarships</p>
+                <p><Link to="/">Entrance examination</Link></p>
+                <p><Link to="/scholarships">Scholarships</Link></p>
 
            </div>
 
             <div className="part">
                 <h3 className="py-2">SCHOOLS TYPES</h3>
-                <p>Universities</p>
-                <p>IPES</p>
-                <p>Training center</p>
-                <p>Others</p>
+                <p><Link to="/">Universities</Link></p>
+                <p><Link to="/">IPES</Link></p>
+                <p><Link to="/">Training center</Link></p>
+                <p><Link to="/">Others</Link></p>
            </div>
 
 

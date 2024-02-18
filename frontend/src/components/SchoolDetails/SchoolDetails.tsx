@@ -26,6 +26,9 @@ const SchoolDetails = () => {
     }, [dispatch, school_id])
 
 
+    const isUserSigned = localStorage.getItem("userInfo")
+
+
     return (
         <section className="pb-20 mb-35 pt-20">
             {loading ? <Loader/>
@@ -41,21 +44,29 @@ const SchoolDetails = () => {
                         <div className="m-10">
                           <div className="university_details_name flex justify-evenly my-5">
                             <h1 className="text-center text-4xl font-bold mt-2">{school.name}</h1>
-                            <span className="py-4">
+                            <span className=" py-4">
                                   <Rating value={school.rating} text={`${school.rating}`} color={'#f8e825'}/>
                             </span>
                             <span className="py-4">
                                 <i className="fa-sharp fa-solid fa-location-pin px-2"></i>{school.location}
                             </span>
-                            <Link to="#" className="flex justify-center  rounded-md bg-transparent text-white  hover:text-white transition-all">
-                              <button className=" rounded-full  py-2 px-4 border-1 bg-amber-500 hover:bg-amber-300"><i className="fa-solid fa-heart px-2"></i>add to favourite</button>
-                            </Link>
+                            { isUserSigned ?
+                                <Link to="#" className="flex justify-center  rounded-md bg-transparent text-white  hover:text-white transition-all">
+                                    <button className=" rounded-full  py-2 px-4 border-1 bg-amber-500 hover:bg-amber-300"><i className="fa-solid fa-heart px-2"></i>add to favourite</button>
+                                </Link>  
+                            :  
+                                <Link to="/signin" className="flex justify-center  rounded-md bg-transparent text-white  hover:text-white transition-all">
+                                    <button className=" rounded-full  py-2 px-4 border-1 bg-amber-500 hover:bg-amber-300">Login to Add this your Favourites</button>
+                                </Link>  
+                            } 
+                              
+                            
                           </div>
                           <div className="tabulation">
                             <TabComponent>
                                 <TabPanelComponent  title="Overview">
                                     <div className="tabcontent">
-                                        <h3>{school.description}</h3>
+                                        <h3 className="text-justify py-2">{school.description}</h3>
                                     </div>
                                 </TabPanelComponent>
                                 <TabPanelComponent  title="admissions">

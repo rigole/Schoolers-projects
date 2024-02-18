@@ -95,10 +95,12 @@ body {
   opacity: 0;
 }
 
-.program_section{
+.program_section {
   margin-bottom: 15rem;
 
 }
+
+
 
 .programs_card_group{
   margin-top: 5rem;
@@ -283,11 +285,7 @@ div .like_university {
   background-color: white;
   cursor: pointer;
 }
-.pp_university_details{
- position: absolute;
- top: 0;
- margin-top: 30rem;
-}
+
 
 .tab {
   display: flex;
@@ -491,6 +489,24 @@ a.ssolink {
 
 
 /*End Signin Form*/
+
+
+
+/* University Details */
+
+.pp_university_details{
+  position: absolute;
+  top: 0;
+  margin-top: 30rem;
+ }
+
+ .rating{
+  display: flex;
+ }
+
+
+
+ /* end University Details */
 
 
 

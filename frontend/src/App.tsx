@@ -13,6 +13,7 @@ import SignUp from './components/SignUp/SignUp';
 import Profile from './components/Profile/Profile';
 import FallbackRender from './components/Error-Boundary/Error';
 import SignIn from './Pages/SignIn';
+import Scholarships from './Pages/Scholarships';
 
 
 
@@ -29,6 +30,7 @@ function App() {
             <Route path='/signup' element={<SignUp/>}/>
             <Route path='profile/' element={<Profile/>}/>
             <Route path='/signin' element={<SignIn/>}/>
+            <Route path='/scholarships' element={<Scholarships/>}/>
             <Route path='*' element={<FallbackRender/>}/>
         </Routes>
         <Footer/>

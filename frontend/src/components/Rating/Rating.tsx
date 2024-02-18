@@ -3,7 +3,7 @@ import React from "react"
 function Rating({ value, text, color }) {
 
     return (
-        <div className="">
+        <div className="rating">
             <span>
                   <i style={{ color }} className={
                       value >= 1
